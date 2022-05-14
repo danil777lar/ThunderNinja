@@ -1,0 +1,3 @@
+[submodule "Assets/submodule-core"]
+	path = Assets/submodule-core
+	url = https://github.com/danil777lar/submodule-core
