@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class EnemyHitTrigger : MonoBehaviour
     [SerializeField] private ParticleSystem _bloodParts;
 
     private bool _isKilled;
+
+    public Action Killed;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,6 +41,8 @@ public class EnemyHitTrigger : MonoBehaviour
 
             _weapon?.Drop();
             _ragdoll.EnableRagdoll((transform.position - collision.transform.position).normalized * 5f);
+
+            Killed?.Invoke();
         }
     }
 }

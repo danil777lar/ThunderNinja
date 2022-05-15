@@ -9,9 +9,10 @@ public class EnemyVision : MonoBehaviour
 {
     [SerializeField] private WeaponController _weapon;
     [SerializeField] private Image _shootImage;
+    [SerializeField] private EnemyHitTrigger _hitTrigger;
 
     private bool _playerInVision;
-    private bool _isPlayerKilled;
+    private bool _disableUpdate;
     private Transform _aimTarget;
     private PlayerControll _playerControll;
     private BoxCollider2D _playerCollider;
@@ -24,12 +25,18 @@ public class EnemyVision : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         _playerControll = player.GetComponent<PlayerControll>();
         _playerCollider = player.GetComponent<BoxCollider2D>();
-        _playerControll.Destroyed += () => _isPlayerKilled = true;
+        _playerControll.Destroyed += () => _disableUpdate = true;
+        _hitTrigger.Killed += () =>
+        {
+            _disableUpdate = true;
+            _shootTween?.Kill();
+            _shootImage.fillAmount = 0f;
+        };
     }
 
     private void Update()
     {
-        if (_isPlayerKilled) return;
+        if (_disableUpdate) return;
 
         if (_playerInVision)
             PlayerInVisionUpdate();

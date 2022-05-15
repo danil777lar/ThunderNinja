@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class CharacterRagdoll : MonoBehaviour
 {
-    [SerializeField] private bool _2DMode;
     [SerializeField] private Rigidbody _root;
 
     private bool _isRagdollEnabled = true;
@@ -18,11 +17,6 @@ public class CharacterRagdoll : MonoBehaviour
         _bones = new List<Rigidbody>(_root.GetComponentsInChildren<Rigidbody>());
         _animator = GetComponent<Animator>();
         DisableRagdoll();
-    }
-
-    private void FixedUpdate()
-    {
-        
     }
 
     public void EnableRagdoll(Vector3 velocity) 
