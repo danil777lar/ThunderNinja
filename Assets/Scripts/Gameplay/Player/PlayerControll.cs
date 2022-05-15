@@ -45,6 +45,13 @@ public class PlayerControll : MonoBehaviour
         TryComputeAim();
     }
 
+    private void OnDestroy()
+    {
+        PlayerControllSlideArea.Default.PointerDown -= OnPointerDown;
+        PlayerControllSlideArea.Default.Drag -= OnPointerMove;
+        PlayerControllSlideArea.Default.PointerUp -= OnPointerUp;
+    }
+
 
     private void LinkSlideArea() 
     {
