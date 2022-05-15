@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ragdoll: {fileID: 146561024037875918}
+  _weapon: {fileID: 6808056414208746675}
+  _hitParts: {fileID: 6480981873378267560, guid: 01eb5cf09fad86b48a06febf7bacf125, type: 3}
+  _bloodParts: {fileID: 1846507115879949583, guid: cf945581b6710d740a8a5a2d408750e9, type: 3}
 --- !u!61 &6551061452305785387
 BoxCollider2D:
   m_ObjectHideFlags: 0

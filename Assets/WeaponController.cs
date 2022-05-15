@@ -25,14 +25,14 @@ namespace Larje.Core.Utils.WeaponControll
         {
             _ikWeight = 1f;
 
-            if (_weapon.RightArmTarget) 
+            if (_weapon && _weapon.RightArmTarget) 
             {
                 _animancer.Animator.SetIKPositionWeight(AvatarIKGoal.RightHand, _ikWeight);
                 _animancer.Animator.SetIKRotationWeight(AvatarIKGoal.RightHand, _ikWeight);
                 _animancer.Animator.SetIKPosition(AvatarIKGoal.RightHand, _weapon.RightArmTarget.position);
                 _animancer.Animator.SetIKRotation(AvatarIKGoal.RightHand, _weapon.RightArmTarget.rotation);
             }
-            if (_weapon.LeftArmTarget) 
+            if (_weapon && _weapon.LeftArmTarget) 
             {
                 _animancer.Animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, _ikWeight);
                 _animancer.Animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, _ikWeight);
@@ -44,19 +44,25 @@ namespace Larje.Core.Utils.WeaponControll
         [ContextMenu("Enable Weapon")]
         private void EnableWeapon() 
         {
-            _weapon.ChangeState(true, 0.5f);
+            _weapon?.ChangeState(true, 0.5f);
         }
 
         [ContextMenu("Disable Weapon")]
         private void DisableWeapon()
         {
-            _weapon.ChangeState(false, 1f);
+            _weapon?.ChangeState(false, 1f);
         }
 
         [ContextMenu("Shoot")]
         private void Shoot() 
         {
-            _weapon.Shoot();
+            _weapon?.Shoot();
+        }
+
+        public void Drop() 
+        {
+            _weapon?.Drop();
+            _weapon = null;
         }
     }
 }

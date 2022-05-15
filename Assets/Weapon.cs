@@ -73,6 +73,12 @@ namespace Larje.Core.Utils.WeaponControll
                 .OnComplete(() => _model.DOLocalMoveZ(0f, 1f));
         }
 
+        public void Drop() 
+        {
+            transform.SetParent(GameObject.FindGameObjectWithTag("Level").transform);
+            GetComponent<Rigidbody>().isKinematic = false;
+        }
+
 
         private void UpdateAim() 
         {
