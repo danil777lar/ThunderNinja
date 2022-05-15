@@ -42,19 +42,25 @@ namespace Larje.Core.Utils.WeaponControll
         }
 
         [ContextMenu("Enable Weapon")]
-        private void EnableWeapon() 
+        public void EnableWeapon() 
         {
             _weapon?.ChangeState(true, 0.5f);
         }
 
         [ContextMenu("Disable Weapon")]
-        private void DisableWeapon()
+        public void DisableWeapon()
         {
             _weapon?.ChangeState(false, 1f);
         }
 
+        public void SetAimTarget(Transform target) 
+        {
+            if (_weapon)
+                _weapon.aimTarget = target;
+        }
+
         [ContextMenu("Shoot")]
-        private void Shoot() 
+        public void Shoot() 
         {
             _weapon?.Shoot();
         }

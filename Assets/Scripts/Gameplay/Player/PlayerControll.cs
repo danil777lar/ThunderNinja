@@ -26,6 +26,7 @@ public class PlayerControll : MonoBehaviour
     public Action PlayerTeleported;
     public Action ComputeAimEnd;
     public Action<Vector2> ComputeAim;
+    public Action Destroyed;
 
 
     private void Start()
@@ -50,6 +51,7 @@ public class PlayerControll : MonoBehaviour
         PlayerControllSlideArea.Default.PointerDown -= OnPointerDown;
         PlayerControllSlideArea.Default.Drag -= OnPointerMove;
         PlayerControllSlideArea.Default.PointerUp -= OnPointerUp;
+        Destroyed?.Invoke();
     }
 
 

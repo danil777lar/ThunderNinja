@@ -16,7 +16,7 @@ TagManager:
   - PlayerWeapon
   - Ammo
   - CharacterHitTrigger
-  - 
+  - PlayerRaycastTarget
   - 
   - 
   - 
