@@ -17,8 +17,6 @@ public class PlayerControll : MonoBehaviour
     [SerializeField] private ParticleSystem _teleportInParticles;
     [SerializeField] private ParticleSystem _teleportOutParticles;
 
-    private bool _pointerMoved;
-    private PointerEventData _movePointerData;
     private Rigidbody2D _rigidbody;
     private BoxCollider2D _collider;
     private TeleportAmmo _teleportAmmoInstance;
@@ -34,8 +32,8 @@ public class PlayerControll : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         _collider = GetComponent<BoxCollider2D>();
 
-        PlayerControllSlideArea.Initialized += LinkSlideArea;
-        if (PlayerControllSlideArea.Default) 
+        Joystick.Initialized += LinkSlideArea;
+        if (Joystick.Default) 
         {
             LinkSlideArea();
         }
@@ -48,24 +46,22 @@ public class PlayerControll : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerControllSlideArea.Default.PointerDown -= OnPointerDown;
-        PlayerControllSlideArea.Default.Drag -= OnPointerMove;
-        PlayerControllSlideArea.Default.PointerUp -= OnPointerUp;
+        Joystick.Default.PointerDown -= OnPointerDown;
+        Joystick.Default.PointerUp -= OnPointerUp;
         Destroyed?.Invoke();
     }
 
 
     private void LinkSlideArea() 
     {
-        PlayerControllSlideArea.Initialized -= LinkSlideArea;
-        PlayerControllSlideArea.Default.PointerDown += OnPointerDown;
-        PlayerControllSlideArea.Default.Drag += OnPointerMove;
-        PlayerControllSlideArea.Default.PointerUp += OnPointerUp;
+        Joystick.Initialized -= LinkSlideArea;
+        Joystick.Default.PointerDown += OnPointerDown;
+        Joystick.Default.PointerUp += OnPointerUp;
     }
 
     private void TryComputeAim() 
     {
-        if (!_pointerMoved)
+        if (Joystick.Default.Direction == Vector2.zero)
         {
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
@@ -74,14 +70,13 @@ public class PlayerControll : MonoBehaviour
         {
             Time.timeScale = 0.1f;
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
-            _trajectory.ShowTrajectory(GetForce(_movePointerData.position));
-            ComputeAim?.Invoke(_movePointerData.position);
+            _trajectory.ShowTrajectory(GetForce(Joystick.Default.Direction));
+            ComputeAim?.Invoke(GetForce(Joystick.Default.Direction));
         }
     }
 
-    private void OnPointerDown(PointerEventData data) 
+    private void OnPointerDown() 
     {
-        _pointerMoved = false;
         if (_teleportAmmoInstance) 
         {
             ParticleSystem partsIn = Instantiate(_teleportInParticles);
@@ -110,30 +105,22 @@ public class PlayerControll : MonoBehaviour
         }
     }
 
-    private void OnPointerMove(PointerEventData data) 
-    {
-        _pointerMoved = true;
-        _movePointerData = data;
-    }
-
-    private void OnPointerUp(PointerEventData data) 
+    private void OnPointerUp() 
     {
         _trajectory.HideTrajectory();
-        if (_pointerMoved)
+        if (Joystick.Default.Direction != Vector2.zero)
         {
             _teleportAmmoInstance = Instantiate(_teleportAmmoPrefab);
             _teleportAmmoInstance.transform.position = new Vector3(_trajectory.transform.position.x, _trajectory.transform.position.y, 0f);
-            _teleportAmmoInstance.Shoot(GetForce(data.position));
+            _teleportAmmoInstance.Shoot(GetForce(Joystick.Default.Direction));
             ComputeAimEnd?.Invoke();
         }
-        _pointerMoved = false;
     }
 
 
-    private Vector2 GetForce(Vector3 screenPosition) 
+    private Vector2 GetForce(Vector3 direction) 
     {
-        Vector2 direction = (screenPosition - Camera.main.WorldToScreenPoint((Vector2)_trajectory.transform.position)).normalized;
-        return direction * _force;
+        return -direction.normalized * _force * Mathf.Max(direction.magnitude, 0.5f);
     }
 
     private void FixPosition() 

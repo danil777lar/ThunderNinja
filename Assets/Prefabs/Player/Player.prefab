@@ -122,6 +122,7 @@ MonoBehaviour:
   - Character
   - CharacterHitTrigger
   - PlayerRaycastTarget
+  - Ignore Raycast
   _startCutLenght: 1
   _linePrefab: {fileID: 995447432063565764, guid: 4666c6be7421c9a4fb786abda71f64e8, type: 3}
   _partsPrefab: {fileID: 0}
@@ -643,6 +644,7 @@ MonoBehaviour:
   _ceilHangAnim: {fileID: -203655887218126122, guid: 035e591eb0a651444ab89ea5a224d010, type: 3}
   _landAnim: {fileID: -203655887218126122, guid: 1322862733e223a41aa23525b4449377, type: 3}
   _rollAnim: {fileID: -4791504522942941401, guid: 7d972090a9feec84e8ede41d4eddba7c, type: 3}
+  _armRoot: {fileID: 4609722583918938092}
 --- !u!54 &363683302140603013
 Rigidbody:
   m_ObjectHideFlags: 0

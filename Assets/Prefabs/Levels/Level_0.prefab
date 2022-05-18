@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8541738179495164083}
+  - component: {fileID: 840786933087525216}
   - component: {fileID: 2172148920884616474}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Camera Field (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 1293618363695531297}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &840786933087525216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516520077051846558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f799b3aa7657de418c609a5c2ee2e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 8594693428566308702}
 --- !u!61 &2172148920884616474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41,7 +55,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.25, y: 0.25}
@@ -273,8 +287,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1212656352790671409}
+  - component: {fileID: 9019484893020327306}
   - component: {fileID: 7636657441422095297}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Camera Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,6 +310,19 @@ Transform:
   m_Father: {fileID: 1293618363695531297}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9019484893020327306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2467330150823406558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f799b3aa7657de418c609a5c2ee2e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 3063426095557001494}
 --- !u!61 &7636657441422095297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -305,7 +333,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.25, y: 0.25}
@@ -897,7 +925,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3063426097007067962}
-  - component: {fileID: 5563457580093836198}
   m_Layer: 0
   m_Name: Camera Holder
   m_TagString: Untagged
@@ -921,18 +948,6 @@ Transform:
   m_Father: {fileID: 3063426096061757936}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5563457580093836198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3063426097007067909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6459cdf6db262b241868f70d158c7775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3063426097127406929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,8 +1455,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8126835867766368074}
+  - component: {fileID: 5358932922605596151}
   - component: {fileID: 5271439671551875533}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Camera Field (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1462,6 +1478,19 @@ Transform:
   m_Father: {fileID: 1293618363695531297}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5358932922605596151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4787235349780130219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f799b3aa7657de418c609a5c2ee2e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 2040127377018056206}
 --- !u!61 &5271439671551875533
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1472,7 +1501,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.25, y: 0.25}
@@ -1964,8 +1993,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468669615207626528}
+  - component: {fileID: 8219807913442555615}
   - component: {fileID: 2816386413384220197}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Camera Field (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1986,6 +2016,19 @@ Transform:
   m_Father: {fileID: 1293618363695531297}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8219807913442555615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8678922187486114018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f799b3aa7657de418c609a5c2ee2e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 6903468474400322250}
 --- !u!61 &2816386413384220197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1996,7 +2039,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.25, y: 0.25}

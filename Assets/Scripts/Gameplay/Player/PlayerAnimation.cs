@@ -15,6 +15,8 @@ public class PlayerAnimation : MonoBehaviour
     [Header("Event Animations")]
     [SerializeField] private AnimationClip _landAnim;
     [SerializeField] private AnimationClip _rollAnim;
+    [Space]
+    [SerializeField] private Transform _armRoot;
 
     private bool _updateAnim = true;
     private bool _computeAim = false;
@@ -142,22 +144,23 @@ public class PlayerAnimation : MonoBehaviour
 
     }
 
-    private void OnComputeAim(Vector2 position) 
+    private void OnComputeAim(Vector2 direction) 
     {
         _computeAim = true;
+        Vector2 position = (Vector2)_armRoot.position + direction.normalized * 10f;
 
         if (!_physics.IsLeftWallSlide && !_physics.IsRightWallSlide)
         {
             float targetRotation = transform.localRotation.eulerAngles.y;
-            if (position.x > Camera.main.WorldToScreenPoint(transform.position).x)
+            if (position.x > transform.position.x)
                 targetRotation = 90f;
-            else if (position.x < Camera.main.WorldToScreenPoint(transform.position).x)
+            else if (position.x < transform.position.x)
                 targetRotation = -90f;
             transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(Vector3.up * targetRotation), Time.deltaTime * 15f / Time.timeScale);
         }
 
         _ikWeight = Mathf.Lerp(_ikWeight, 1f, Time.deltaTime * 15f / Time.timeScale);
-        _ikPosition = Camera.main.ScreenToWorldPoint(new Vector3(position.x, position.y, -Camera.main.transform.position.z));
+        _ikPosition = new Vector3(position.x, position.y, -Camera.main.transform.position.z);
     }
 
     private void OnComputeAimEnd()
