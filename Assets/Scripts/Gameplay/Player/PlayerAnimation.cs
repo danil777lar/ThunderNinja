@@ -19,7 +19,6 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] private Transform _armRoot;
 
     private bool _updateAnim = true;
-    private bool _computeAim = false;
     private float _ikWeight;
     private Vector3 _ikPosition;
 
@@ -36,8 +35,6 @@ public class PlayerAnimation : MonoBehaviour
         _controll = GetComponentInParent<PlayerControll>();
 
         _controll.PlayerTeleported += OnPlayerTeleported;
-        _controll.ComputeAim += OnComputeAim;
-        _controll.ComputeAimEnd += OnComputeAimEnd;
         _physics.GroundStateChanged += OnGroundStateChanged;
         _physics.CeilStateChanged += OnCeilStateChanged;
         _physics.WallStateChanged += OnWallStateChanged;
@@ -53,7 +50,7 @@ public class PlayerAnimation : MonoBehaviour
             _animancer.Play(anim, fade);
         }
 
-        if (!_computeAim)
+        if (!_controll.ComputeAim)
         {
             float targetRotation = transform.localRotation.eulerAngles.y;
             if (_physics.Velocity.x > 0f)
@@ -63,6 +60,23 @@ public class PlayerAnimation : MonoBehaviour
             transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(Vector3.up * targetRotation), Time.deltaTime * 5f);
 
             _ikWeight = Mathf.Lerp(_ikWeight, 0f, Time.deltaTime * 15f / Time.timeScale);
+        }
+        else 
+        {
+            Vector2 position = (Vector2)_armRoot.position + _controll.AimDirection.normalized * 10f;
+
+            if (!_physics.IsLeftWallSlide && !_physics.IsRightWallSlide)
+            {
+                float targetRotation = transform.localRotation.eulerAngles.y;
+                if (position.x > transform.position.x)
+                    targetRotation = 90f;
+                else if (position.x < transform.position.x)
+                    targetRotation = -90f;
+                transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(Vector3.up * targetRotation), Time.deltaTime * 15f / Time.timeScale);
+            }
+
+            _ikWeight = Mathf.Lerp(_ikWeight, 1f, Time.deltaTime * 15f / Time.timeScale);
+            _ikPosition = new Vector3(position.x, position.y, -Camera.main.transform.position.z);
         }
     }
 
@@ -142,30 +156,6 @@ public class PlayerAnimation : MonoBehaviour
     private void OnWallStateChanged(bool arg)
     {
 
-    }
-
-    private void OnComputeAim(Vector2 direction) 
-    {
-        _computeAim = true;
-        Vector2 position = (Vector2)_armRoot.position + direction.normalized * 10f;
-
-        if (!_physics.IsLeftWallSlide && !_physics.IsRightWallSlide)
-        {
-            float targetRotation = transform.localRotation.eulerAngles.y;
-            if (position.x > transform.position.x)
-                targetRotation = 90f;
-            else if (position.x < transform.position.x)
-                targetRotation = -90f;
-            transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(Vector3.up * targetRotation), Time.deltaTime * 15f / Time.timeScale);
-        }
-
-        _ikWeight = Mathf.Lerp(_ikWeight, 1f, Time.deltaTime * 15f / Time.timeScale);
-        _ikPosition = new Vector3(position.x, position.y, -Camera.main.transform.position.z);
-    }
-
-    private void OnComputeAimEnd()
-    {
-        _computeAim = false;
     }
 
 

@@ -74,6 +74,7 @@ public class PlayerPhysics : MonoBehaviour
 
     public Vector2 Velocity => _rb.velocity;
 
+    public Action AttachedToAnySurface;
     public Action<bool> GroundStateChanged;
     public Action<bool> CeilStateChanged;
     public Action<bool> WallStateChanged;
@@ -135,12 +136,14 @@ public class PlayerPhysics : MonoBehaviour
 
     private void AttachToGround() 
     {
+        AttachedToAnySurface?.Invoke();
         _gravityChangeTween?.Kill();
         _rb.gravityScale = 2f;
     }
 
     private void AttachToCeil() 
     {
+        AttachedToAnySurface?.Invoke();
         _gravityChangeTween?.Kill();
         _rb.gravityScale = 0f;
         _rb.velocity = Vector2.zero;
@@ -150,6 +153,7 @@ public class PlayerPhysics : MonoBehaviour
 
     private void AttachToWall() 
     {
+        AttachedToAnySurface?.Invoke();
         _gravityChangeTween?.Kill();
         _rb.gravityScale = 0f;
         _rb.velocity = Vector2.zero;

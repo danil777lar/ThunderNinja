@@ -7,6 +7,8 @@ using DG.Tweening;
 
 public class EnemyVision : MonoBehaviour
 {
+    [SerializeField] private float _visionDistance = 1000f;
+    [Space]
     [SerializeField] private WeaponController _weapon;
     [SerializeField] private Image _shootImage;
     [SerializeField] private EnemyHitTrigger _hitTrigger;
@@ -48,7 +50,7 @@ public class EnemyVision : MonoBehaviour
     private void PlayerInVisionUpdate()
     {
         Vector2 direction = _playerCollider.bounds.center - transform.position;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1000f, LayerMask.GetMask("Default", "PlayerRaycastTarget"));
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, _visionDistance, LayerMask.GetMask("Default", "PlayerRaycastTarget"));
         if (!hit || hit.collider.gameObject.layer == LayerMask.NameToLayer("Default") || Vector2.Angle(direction, transform.forward) > 45f)
         {
             _playerInVision = false;
@@ -78,7 +80,7 @@ public class EnemyVision : MonoBehaviour
         Vector2 direction = _playerCollider.bounds.center - transform.position;
         if (Vector2.Angle(direction, transform.forward) <= 45f)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1000f, LayerMask.GetMask("Default", "PlayerRaycastTarget"));
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, _visionDistance, LayerMask.GetMask("Default", "PlayerRaycastTarget"));
             if (hit && hit.collider.gameObject.layer == LayerMask.NameToLayer("PlayerRaycastTarget"))
             {
                 _playerInVision = true;

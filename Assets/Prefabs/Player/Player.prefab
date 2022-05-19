@@ -951,8 +951,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f76cacec9b63c428009ff4146b47b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _force: 12
+  _force: 15
   _maxRange: 0
+  _minJoystickMagnitude: 0.5
+  _maxAmmoCount: 2
   _trajectory: {fileID: 8057781224999667873}
   _teleportAmmoPrefab: {fileID: 7462048383508587990, guid: 9a3bc372bbb99244ba68de8ed9580abe, type: 3}
   _bodyHolder: {fileID: 3036160799796691310}
