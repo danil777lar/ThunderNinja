@@ -5213,3 +5213,500 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004283 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.118 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 206.3 MB.
+System memory in use after: 206.4 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4759.
+Total: 3.518300 ms (FindLiveObjects: 0.401600 ms CreateObjectMapping: 0.185600 ms MarkObjects: 2.826100 ms  DeleteObjects: 0.104300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 882.990500 seconds.
+  path: Assets/Plugins/Animancer/Examples/04 Directional Sprites/01 Basic Movement/Critters/Critters.png
+  artifactKey: Guid(5b54aaa7498024e438d906b1a29048ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Animancer/Examples/04 Directional Sprites/01 Basic Movement/Critters/Critters.png using Guid(5b54aaa7498024e438d906b1a29048ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9cd33c64a6d6a6fb095994485edcd5') in 0.148021 seconds 
+  Import took 0.154208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Icon_Gem.png
+  artifactKey: Guid(4365697ea8a484597bdeebfece51b922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Icon_Gem.png using Guid(4365697ea8a484597bdeebfece51b922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4885ba1da56650bfb8cc76466ef829c8') in 0.008485 seconds 
+  Import took 0.014618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_On.png
+  artifactKey: Guid(682164a01892f497b8e08460f76d8870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_On.png using Guid(682164a01892f497b8e08460f76d8870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62da6c717ad709b26758e35647a44e0') in 0.010079 seconds 
+  Import took 0.016328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/star_silver.png
+  artifactKey: Guid(1ac0463e439e8476bb1bff2bce854150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/star_silver.png using Guid(1ac0463e439e8476bb1bff2bce854150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca199a741c4579858c0494b33d724083') in 0.018636 seconds 
+  Import took 0.025763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Frame_Off_white.png
+  artifactKey: Guid(6028a2645fcdf40a1a1d9897305ec080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Frame_Off_white.png using Guid(6028a2645fcdf40a1a1d9897305ec080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd2cf46acc942f1adfd4bef2f7bde4c8') in 0.009675 seconds 
+  Import took 0.015747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_d.png
+  artifactKey: Guid(841a871895a0c4008b03292b5e6192fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_d.png using Guid(841a871895a0c4008b03292b5e6192fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a8cdce51a41fbbfe2b453bc2afdcf0') in 0.009014 seconds 
+  Import took 0.016210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_White_Icon.png
+  artifactKey: Guid(6d3e2b77d54f8442ea9173fd5779dade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_White_Icon.png using Guid(6d3e2b77d54f8442ea9173fd5779dade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22834b7dab98e05353106c13a1ffc624') in 0.014529 seconds 
+  Import took 0.021650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade_01.png
+  artifactKey: Guid(4ae985251e38f4f2ba4962b4be6d0646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade_01.png using Guid(4ae985251e38f4f2ba4962b4be6d0646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2718eb9a7a0d6eef176dd67cc5f8b4') in 0.010928 seconds 
+  Import took 0.018946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Icon_Sound_off.png
+  artifactKey: Guid(12c8c80b6fe8047b3ba194bc534f428d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Icon_Sound_off.png using Guid(12c8c80b6fe8047b3ba194bc534f428d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68fb7be69c73e40587170713788f43d4') in 0.012131 seconds 
+  Import took 0.020003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Handel_Off.png
+  artifactKey: Guid(9c8ef904064c44f69bcbe26135ba9544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Handel_Off.png using Guid(9c8ef904064c44f69bcbe26135ba9544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cd54a3a13cf711ad9f2c4cd7173fc2') in 0.011498 seconds 
+  Import took 0.018110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Icon_Bgm_on.png
+  artifactKey: Guid(b9d2fdcb5697a40c89b55a17acf3a27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Icon_Bgm_on.png using Guid(b9d2fdcb5697a40c89b55a17acf3a27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8afe047b0b0260f074e262510b10df69') in 0.010178 seconds 
+  Import took 0.017671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_Logo_180.png
+  artifactKey: Guid(0acc52ae5d23d6d40a5fcbe6548986e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Common Demo Assets/Graphics/TCP2_Demo_Logo_180.png using Guid(0acc52ae5d23d6d40a5fcbe6548986e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad398ab09786fb9adfdb1eea0f196baa') in 0.009672 seconds 
+  Import took 0.017730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status00_Btn_Add_s_white.png
+  artifactKey: Guid(8383e06d439284367999744cb0e77c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status00_Btn_Add_s_white.png using Guid(8383e06d439284367999744cb0e77c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3379886d04652f33ed62cc1bf4274798') in 0.010112 seconds 
+  Import took 0.017632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Icon_Bgm_off.png
+  artifactKey: Guid(30295b2e1a5f148de94e9fc569c075ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Icon_Bgm_off.png using Guid(30295b2e1a5f148de94e9fc569c075ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70584f3de42075e8bc8ec815d0b386ce') in 0.009204 seconds 
+  Import took 0.016488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_White_Icon.png
+  artifactKey: Guid(b7e797a82372b4bdc81ab24600e3cbca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_White_Icon.png using Guid(b7e797a82372b4bdc81ab24600e3cbca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cdb5a5e58087a25be897757de20b95c') in 0.010928 seconds 
+  Import took 0.017842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Handle_On.png
+  artifactKey: Guid(10eefbba03db44fd38956fa44c1c84dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Handle_On.png using Guid(10eefbba03db44fd38956fa44c1c84dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54679ad0023f1e169175ce20dcedc8ef') in 0.010524 seconds 
+  Import took 0.018518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Common Demo Assets/UI/TCP2_Demo_TextBox.png
+  artifactKey: Guid(ca1d4943e72db4e4bba15c8457c1a404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Common Demo Assets/UI/TCP2_Demo_TextBox.png using Guid(ca1d4943e72db4e4bba15c8457c1a404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b04e946f4ab62f57f32ccc8a707daf') in 0.008569 seconds 
+  Import took 0.016740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/star_gold.png
+  artifactKey: Guid(ec2686217ba6b4e5a9c5cbf8b3e9e565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/star_gold.png using Guid(ec2686217ba6b4e5a9c5cbf8b3e9e565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1413f0a3c082df504e0883afefd87b5') in 0.009026 seconds 
+  Import took 0.017216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_Off.png
+  artifactKey: Guid(eb04a783ed0d649c7a4f77fb2f579afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_Off.png using Guid(eb04a783ed0d649c7a4f77fb2f579afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd1d27e7e1cb1aa75f56263bd4cd2ae') in 0.009886 seconds 
+  Import took 0.016761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Textures/TCP2_Demo_Logo.png
+  artifactKey: Guid(22db3d1683e49874c9321c2887146b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Textures/TCP2_Demo_Logo.png using Guid(22db3d1683e49874c9321c2887146b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927f755cbf7afed85abeb73db85f21ea') in 0.008655 seconds 
+  Import took 0.018368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_Off.png
+  artifactKey: Guid(589582e2699004f4684613ff2e5de433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_Off.png using Guid(589582e2699004f4684613ff2e5de433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f3b8ae11efba6e7e90d16fcb95ef1d') in 0.007163 seconds 
+  Import took 0.015001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade_00.png
+  artifactKey: Guid(ef9c1e66b126e48f3875a5f810b9f0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade_00.png using Guid(ef9c1e66b126e48f3875a5f810b9f0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c617e69734f6366ba43224419e98958c') in 0.007872 seconds 
+  Import took 0.014829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000733 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status00_Btn_Add_s.png
+  artifactKey: Guid(f085343b86a9043fd98ffe5f6709964e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status00_Btn_Add_s.png using Guid(f085343b86a9043fd98ffe5f6709964e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed140ce264ef12cee9ddb00fbdd15a9') in 0.008337 seconds 
+  Import took 0.017326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/title_icon_setting.png
+  artifactKey: Guid(05b606a84489e47918bf45a5d389429d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/title_icon_setting.png using Guid(05b606a84489e47918bf45a5d389429d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b5c7f1fe3bbe0f4059d8b5b2f6d491') in 0.009882 seconds 
+  Import took 0.018117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Frame_00.png
+  artifactKey: Guid(e8ac20b4379a041488abefbdcb6bcccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Frame_00.png using Guid(e8ac20b4379a041488abefbdcb6bcccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54298e390cc679fadaac2c2baa973ed') in 0.011288 seconds 
+  Import took 0.017533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_White0.png
+  artifactKey: Guid(a0fc328741e474ef4b6d7a4025a9c27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_White0.png using Guid(a0fc328741e474ef4b6d7a4025a9c27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a32002871c7a47f0f9a695c110d9e2d') in 0.007765 seconds 
+  Import took 0.016178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Frame_01.png
+  artifactKey: Guid(7caec3c9d727947bb9f74e006965332d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Frame_01.png using Guid(7caec3c9d727947bb9f74e006965332d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b556af0a06ce866c711ecff25c72c4') in 0.008289 seconds 
+  Import took 0.015449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Common Demo Assets/UI/TCP2_Demo_Line.png
+  artifactKey: Guid(386e3883d86efd849b91a0a69340c434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Common Demo Assets/UI/TCP2_Demo_Line.png using Guid(386e3883d86efd849b91a0a69340c434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ddac62cc8f6cf705c636327264a9932') in 0.009238 seconds 
+  Import took 0.015691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_White1.png
+  artifactKey: Guid(b55e2a5b3f2d14c00a903ee1e2a8f502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_White1.png using Guid(b55e2a5b3f2d14c00a903ee1e2a8f502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a57896d68e966a6ebbfce7249648d21') in 0.008182 seconds 
+  Import took 0.016782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Visual/Sprites/Square.png
+  artifactKey: Guid(2039fe20df3ff154186b161d732d1c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Visual/Sprites/Square.png using Guid(2039fe20df3ff154186b161d732d1c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ebb865cec7c5eab51505aabadcacfbd') in 0.008593 seconds 
+  Import took 0.015897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status00_Btn_Add_n.png
+  artifactKey: Guid(10eefd2bd49604e2cb79899046c5b868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status00_Btn_Add_n.png using Guid(10eefd2bd49604e2cb79899046c5b868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59df02c086eb4ccc51efea08f652e4e1') in 0.009262 seconds 
+  Import took 0.018213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Frame_Off.png
+  artifactKey: Guid(fb850670f0eac49ada59a80a79958a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Frame_Off.png using Guid(fb850670f0eac49ada59a80a79958a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae711059d7134684513eb7e50a4c2e1') in 0.007658 seconds 
+  Import took 0.015192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade.png
+  artifactKey: Guid(b8ae9a8e2d4ff41a6aa6e9b5d3f5dba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade.png using Guid(b8ae9a8e2d4ff41a6aa6e9b5d3f5dba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e52387126233606ee7e8d8b40f1e336a') in 0.007228 seconds 
+  Import took 0.014780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Icon_Sound_on.png
+  artifactKey: Guid(63d0d9172b5894263bec67b6f0d6b33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Icon_Sound_on.png using Guid(63d0d9172b5894263bec67b6f0d6b33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ece92afaf3f9f4822de1e9db3db5265') in 0.008852 seconds 
+  Import took 0.017307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_White1.png
+  artifactKey: Guid(9cad3f19a90254fb681baa279f61e3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_White1.png using Guid(9cad3f19a90254fb681baa279f61e3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29c97e8d92aabc9d609fcc9e79948d4') in 0.008411 seconds 
+  Import took 0.015395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_On.png
+  artifactKey: Guid(fac2df1f3e0524c8fba7a4c5d38fbaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Check_On.png using Guid(fac2df1f3e0524c8fba7a4c5d38fbaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82f113e948a8ecfa8b3b47d6b06eaf6') in 0.009762 seconds 
+  Import took 0.015815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade_02.png
+  artifactKey: Guid(d2323645f78ca4e86897045e6d513476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade_02.png using Guid(d2323645f78ca4e86897045e6d513476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd615f3b8006c32c94dd2a9a32edca46') in 0.007590 seconds 
+  Import took 0.015539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Frame_On_white.png
+  artifactKey: Guid(97f85db4008234a06a9486b850026420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Frame_On_white.png using Guid(97f85db4008234a06a9486b850026420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c6340ebf189e44e2917864241b359bf') in 0.007511 seconds 
+  Import took 0.015224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade_03.png
+  artifactKey: Guid(930816a3b8b1647879acca9138f222d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/StarGrade_03.png using Guid(930816a3b8b1647879acca9138f222d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31cdb034e319dc672b9b9852bc1a291a') in 0.009904 seconds 
+  Import took 0.016734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_White0.png
+  artifactKey: Guid(d63bb7720ac844035a061bb9c417035f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_White0.png using Guid(d63bb7720ac844035a061bb9c417035f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2019a0a024f742b1fb9833873c89f174') in 0.007961 seconds 
+  Import took 0.014922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/star_bronze.png
+  artifactKey: Guid(01ad9696d83954bd5845f04a2daea40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Demo/Demo_Icon/star_bronze.png using Guid(01ad9696d83954bd5845f04a2daea40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe94e7d179f36e336bb6070e9357fe5c') in 0.010252 seconds 
+  Import took 0.018223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Icon_Star.png
+  artifactKey: Guid(22ced6226f74d47088d5dd349c334600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Icon_Star.png using Guid(22ced6226f74d47088d5dd349c334600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f5ad3d1faf8fe2d4846a7d651408c0') in 0.010020 seconds 
+  Import took 0.020087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Handle_white.png
+  artifactKey: Guid(25baa29b3c05041d0a9d39b0b62be026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Handle_white.png using Guid(25baa29b3c05041d0a9d39b0b62be026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94bc881eb30b05c5f411a573e8667d2') in 0.008465 seconds 
+  Import took 0.017109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Icon_Coin.png
+  artifactKey: Guid(a18602cdd2beb4c029ba764153b7e9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Icon_Coin.png using Guid(a18602cdd2beb4c029ba764153b7e9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f099ab83d8cb8cf481516093b5ab8e') in 0.009454 seconds 
+  Import took 0.017663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Icon_Life.png
+  artifactKey: Guid(45468af8a279645589ed75374d87a0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Status_Icon_Life.png using Guid(45468af8a279645589ed75374d87a0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9816507511be20e2046fb2b74e00dd96') in 0.008835 seconds 
+  Import took 0.015066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_d.png
+  artifactKey: Guid(826b789ce12714eaa9b1cd0bda29363b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Radio_d.png using Guid(826b789ce12714eaa9b1cd0bda29363b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbcd88579142ac8ffd88cc31db644240') in 0.008446 seconds 
+  Import took 0.017990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Plugins/Animancer/Examples/04 Directional Sprites/02 Character Controller/Environment/Wall.png
+  artifactKey: Guid(f37a2d497a5dc5e44a2163b4c60e592d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Animancer/Examples/04 Directional Sprites/02 Character Controller/Environment/Wall.png using Guid(f37a2d497a5dc5e44a2163b4c60e592d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b213aa9a1e7039f03b11dfc1c6e79677') in 0.006878 seconds 
+  Import took 0.015789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Frame_On.png
+  artifactKey: Guid(a2041ec4f9dd1457e880945e9976dff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/UI_Etc/Toggle_Switch_Frame_On.png using Guid(a2041ec4f9dd1457e880945e9976dff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee15bb4b07d2e6731cc947e7e2133968') in 0.009401 seconds 
+  Import took 0.017609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.369556 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider01_Icon_On.png
+  artifactKey: Guid(0357858f21d3f4457a9a93a661b2a68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider01_Icon_On.png using Guid(0357858f21d3f4457a9a93a661b2a68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea02a6526a802652fadf0d1c1d2c7b66') in 0.009302 seconds 
+  Import took 0.015732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Icon_Energy.png
+  artifactKey: Guid(2ab26d2f84b2a4e2fa943bfb1ec75327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Icon_Energy.png using Guid(2ab26d2f84b2a4e2fa943bfb1ec75327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e24793d67171be02e0b18154b61c4af') in 0.008348 seconds 
+  Import took 0.014273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider02_Fill.png
+  artifactKey: Guid(19f2c62f80585421e91895924273568f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider02_Fill.png using Guid(19f2c62f80585421e91895924273568f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310588c8db6aadac5ebf2e2ee602a949') in 0.008375 seconds 
+  Import took 0.016190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Icon_Dynamite.png
+  artifactKey: Guid(ae1ade961b7f84175b45006e3f33c567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Icon_Dynamite.png using Guid(ae1ade961b7f84175b45006e3f33c567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6520ae9965f1fb74c22a8985cbdccf11') in 0.010558 seconds 
+  Import took 0.016664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Icon_Potion.png
+  artifactKey: Guid(892e00d45246041fc87c6e952e11ab70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Icon_Potion.png using Guid(892e00d45246041fc87c6e952e11ab70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b6b4497d719df4c3e78041e3d99119') in 0.008537 seconds 
+  Import took 0.017116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider02_Icon.png
+  artifactKey: Guid(87c51816c199a45138e47fa625c5caaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider02_Icon.png using Guid(87c51816c199a45138e47fa625c5caaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c54a36df1602960f814451a54590b561') in 0.009981 seconds 
+  Import took 0.016276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Fill.png
+  artifactKey: Guid(890fe08dea9624ff6ac6ca179b6aa52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Fill.png using Guid(890fe08dea9624ff6ac6ca179b6aa52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1aa35f787185029688005898750479') in 0.009362 seconds 
+  Import took 0.017775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Frame.png
+  artifactKey: Guid(bd7cb9925879e48c2ac9f59981bbf499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Frame.png using Guid(bd7cb9925879e48c2ac9f59981bbf499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c835b2a6b20686e7cab688707a116459') in 0.008683 seconds 
+  Import took 0.016041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider02_Frame.png
+  artifactKey: Guid(24c37d4f18533447ab587d10fae2983e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider02_Frame.png using Guid(24c37d4f18533447ab587d10fae2983e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbcd5489f8acf2ec83d7c4af489b82d') in 0.007775 seconds 
+  Import took 0.016534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000646 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Icon_PlusTime.png
+  artifactKey: Guid(986a375970cb345a1be3be3f3e42cd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Sprite/Component/Slider/Slider_IconType_Icon_PlusTime.png using Guid(986a375970cb345a1be3be3f3e42cd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a29ea1f8fa8ffd31b435e07019638e') in 0.007869 seconds 
+  Import took 0.015457 seconds .
+

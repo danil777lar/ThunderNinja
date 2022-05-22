@@ -102,8 +102,8 @@ public class PlayerControll : MonoBehaviour
     {
         if (_teleportAmmoInstance) 
         {
-            ParticleSystem partsIn = Instantiate(_teleportInParticles);
-            ParticleSystem partsOut = Instantiate(_teleportOutParticles);
+            ParticleSystem partsIn = Instantiate(_teleportInParticles, GameObject.FindGameObjectWithTag("Level").transform, true);
+            ParticleSystem partsOut = Instantiate(_teleportOutParticles, GameObject.FindGameObjectWithTag("Level").transform, true);
             partsIn.transform.position = transform.position + (Vector3.up * _collider.size.y / 2f);
             partsOut.transform.position = _teleportAmmoInstance.transform.position + (Vector3.up * _collider.size.y / 2f);
             partsIn.Play();
@@ -133,7 +133,7 @@ public class PlayerControll : MonoBehaviour
         _trajectory.HideTrajectory();
         if (Joystick.Default.Direction.magnitude >= _minJoystickMagnitude && _ammoCount > 0)
         {
-            _teleportAmmoInstance = Instantiate(_teleportAmmoPrefab);
+            _teleportAmmoInstance = Instantiate(_teleportAmmoPrefab, GameObject.FindGameObjectWithTag("Level").transform, true);
             _teleportAmmoInstance.transform.position = new Vector3(_ammoSpawn.position.x, _ammoSpawn.position.y, 0f);
             _teleportAmmoInstance.Shoot(GetForce(Joystick.Default.Direction));
             _ammoCount--;

@@ -70,6 +70,8 @@ public class TeleportAmmo : MonoBehaviour
 
     public void Remove()
     {
+        _shootParts.transform.SetParent(GameObject.FindGameObjectWithTag("Level").transform);
+        Destroy(_shootParts.gameObject, _shootParts.main.duration);
         Destroy(gameObject);
     }
 
@@ -80,6 +82,7 @@ public class TeleportAmmo : MonoBehaviour
         if (arg)
         {
             StopAllCoroutines();
+            _shootParts?.Play();
         }
         else 
         {
@@ -91,6 +94,7 @@ public class TeleportAmmo : MonoBehaviour
     private IEnumerator FallAnim(float delay = 0f) 
     {
         yield return new WaitForSeconds(delay);
+        _shootParts?.Stop();
 
         _rigidbody.velocity = Vector2.zero;
         _rigidbody.gravityScale = 0.2f;
