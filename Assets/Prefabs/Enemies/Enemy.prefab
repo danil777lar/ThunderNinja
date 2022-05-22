@@ -1266,6 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f74104a3c493b344b07a0a1f13163c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _visionDistance: 1000
   _weapon: {fileID: 6808056414208746675}
   _shootImage: {fileID: 675604072003420749}
   _hitTrigger: {fileID: 6664342328851807399}
@@ -1549,9 +1550,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 137720934533220950, guid: 2f3e27eecb190e44a9af50723c394274, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137720934533220950, guid: 2f3e27eecb190e44a9af50723c394274, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7d22fc6b9a431b043a917fb89a80bcfc, type: 2}
+      objectReference: {fileID: 2100000, guid: 13f7080ea4a72cf4a92f61179ef7a87f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3e27eecb190e44a9af50723c394274, type: 3}
 --- !u!1 &6807337532925538796 stripped
