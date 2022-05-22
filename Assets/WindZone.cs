@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class WindZone : MonoBehaviour
 {
+    [SerializeField] private bool _blockCollisions;
     [SerializeField] private float _power;
     [SerializeField] private ParticleSystem _parts;
 
@@ -28,7 +29,11 @@ public class WindZone : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("PlayerWeapon")) 
         {
-            collision.GetComponent<TeleportAmmo>().SetActiveSimplePhysics(true);
+            TeleportAmmo ammo = collision.GetComponent<TeleportAmmo>();
+            ammo.SetActiveSimplePhysics(true);
+            if (_blockCollisions)
+                ammo.enableCollision = false;
+
             collision.attachedRigidbody.velocity = Vector2.zero;
             collision.attachedRigidbody.drag = 0f;
         }
@@ -53,7 +58,12 @@ public class WindZone : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("PlayerWeapon"))
         {
-            collision.GetComponent<TeleportAmmo>().SetActiveSimplePhysics(false);
+            TeleportAmmo ammo = collision.GetComponent<TeleportAmmo>();
+            ammo.SetActiveSimplePhysics(false, 5f);
+            collision.attachedRigidbody.gravityScale = 0.5f;
+            collision.attachedRigidbody.drag = 0f;
+            if (_blockCollisions)
+                ammo.enableCollision = true;
         }
     }
 }

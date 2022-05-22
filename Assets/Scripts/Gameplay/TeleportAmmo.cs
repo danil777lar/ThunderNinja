@@ -12,6 +12,8 @@ public class TeleportAmmo : MonoBehaviour
     private float _passedLenght;
     private Rigidbody2D _rigidbody;
 
+    public bool enableCollision = true;
+
     public Vector2 Normal { get; private set; }
     public Vector2 Velocity => _rigidbody.velocity;
 
@@ -43,6 +45,9 @@ public class TeleportAmmo : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!enableCollision)
+            return;
+
         _computePath = false;
         StopAllCoroutines();
 
@@ -64,7 +69,7 @@ public class TeleportAmmo : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void SetActiveSimplePhysics(bool arg)
+    public void SetActiveSimplePhysics(bool arg, float delay = 0f)
     {
         _computePath = false;
 
@@ -74,13 +79,15 @@ public class TeleportAmmo : MonoBehaviour
         }
         else 
         {
-            StartCoroutine(FallAnim());
+            StartCoroutine(FallAnim(delay));
         }
     }
 
 
-    private IEnumerator FallAnim() 
+    private IEnumerator FallAnim(float delay = 0f) 
     {
+        yield return new WaitForSeconds(delay);
+
         _rigidbody.gravityScale = 0.2f;
         _rigidbody.drag = 10f;
         yield return new WaitForSeconds(0.5f);
