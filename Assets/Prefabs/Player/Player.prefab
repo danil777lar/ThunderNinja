@@ -955,7 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f76cacec9b63c428009ff4146b47b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _force: 50
+  _force: 25
   _maxRange: 0
   _minJoystickMagnitude: 0.5
   _maxAmmoCount: 2
@@ -989,6 +989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1814940c2a1f44d81ee1cb6ee6e8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isInLight: 0
+  _lightCount: 0
 --- !u!50 &484533668917627053
 Rigidbody2D:
   serializedVersion: 4

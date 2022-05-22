@@ -7,6 +7,7 @@ using DG.Tweening;
 public class TeleportAmmo : MonoBehaviour
 {
     [SerializeField] private float _throwLenght;
+    [SerializeField] private ParticleSystem _shootParts;
 
     private bool _computePath;
     private float _passedLenght;
@@ -33,6 +34,7 @@ public class TeleportAmmo : MonoBehaviour
             if (_passedLenght >= _throwLenght) 
             {
                 _computePath = false;
+                _shootParts?.Stop();
                 StartCoroutine(FallAnim());        
             }
         }
@@ -51,6 +53,7 @@ public class TeleportAmmo : MonoBehaviour
         _computePath = false;
         StopAllCoroutines();
 
+        _shootParts?.Stop();
         _rigidbody.isKinematic = true;
         _rigidbody.velocity = Vector2.zero;
         _rigidbody.angularVelocity = 0f;
@@ -62,6 +65,7 @@ public class TeleportAmmo : MonoBehaviour
     {
         _computePath = true;
         _rigidbody.AddForce(force, ForceMode2D.Impulse);
+        _shootParts?.Play();
     }
 
     public void Remove()
@@ -88,9 +92,8 @@ public class TeleportAmmo : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
+        _rigidbody.velocity = Vector2.zero;
         _rigidbody.gravityScale = 0.2f;
-        _rigidbody.drag = 10f;
-        yield return new WaitForSeconds(0.5f);
         _rigidbody.drag = 1f;
 
         while (true)
