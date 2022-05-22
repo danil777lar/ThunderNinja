@@ -49,9 +49,7 @@ public class EnemyVision : MonoBehaviour
 
     private void PlayerInVisionUpdate()
     {
-        Vector2 direction = _playerCollider.bounds.center - transform.position;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, _visionDistance, LayerMask.GetMask("Default", "PlayerRaycastTarget"));
-        if (!hit || hit.collider.gameObject.layer == LayerMask.NameToLayer("Default") || Vector2.Angle(direction, transform.forward) > 45f)
+        if (!EnemyVisionTarget.Default.CheckIsInVision(transform, _visionDistance, 45f))
         {
             _playerInVision = false;
             _weapon.DisableWeapon();
@@ -75,35 +73,30 @@ public class EnemyVision : MonoBehaviour
         }
     }
 
-    private void PlayerOutVisionUpdate() 
+    private void PlayerOutVisionUpdate()
     {
-        Vector2 direction = _playerCollider.bounds.center - transform.position;
-        if (Vector2.Angle(direction, transform.forward) <= 45f)
+        if (EnemyVisionTarget.Default.CheckIsInVision(transform, _visionDistance, 45f))
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, _visionDistance, LayerMask.GetMask("Default", "PlayerRaycastTarget"));
-            if (hit && hit.collider.gameObject.layer == LayerMask.NameToLayer("PlayerRaycastTarget"))
-            {
-                _playerInVision = true;
-                _weapon.EnableWeapon();
+            _playerInVision = true;
+            _weapon.EnableWeapon();
 
-                if (_aimTarget)
-                    Destroy(_aimTarget.gameObject);
-                _aimTarget = new GameObject("Aim Target").transform;
-                _aimTarget.SetParent(GameObject.FindGameObjectWithTag("Level").transform);
-                _aimTarget.position = _playerCollider.bounds.center;
-                _weapon.SetAimTarget(_aimTarget);
+            if (_aimTarget)
+                Destroy(_aimTarget.gameObject);
+            _aimTarget = new GameObject("Aim Target").transform;
+            _aimTarget.SetParent(GameObject.FindGameObjectWithTag("Level").transform);
+            _aimTarget.position = _playerCollider.bounds.center;
+            _weapon.SetAimTarget(_aimTarget);
 
-                _shootImage.fillAmount = 0f;
-                _shootTween?.Kill();
-                _shootTween = _shootImage.DOFillAmount(1f, 2f)
-                    .OnComplete(() =>
-                    {
-                        _shootImage.fillAmount = 0f;
-                        _weapon.Shoot();
-                    });
+            _shootImage.fillAmount = 0f;
+            _shootTween?.Kill();
+            _shootTween = _shootImage.DOFillAmount(1f, 0.5f)
+                .OnComplete(() =>
+                {
+                    _shootImage.fillAmount = 0f;
+                    _weapon.Shoot();
+                });
 
-                return;
-            } 
+            return;
         }
     }
 }
