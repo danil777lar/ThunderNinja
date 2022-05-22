@@ -16,6 +16,7 @@ public class PlayerControll : MonoBehaviour
     [Space]
     [SerializeField] private int _maxAmmoCount;
     [Header("Links")]
+    [SerializeField] private Transform _ammoSpawn;
     [SerializeField] private TrajectoryDrawer _trajectory;
     [SerializeField] private TeleportAmmo _teleportAmmoPrefab;
     [SerializeField] private Transform _bodyHolder;
@@ -113,7 +114,7 @@ public class PlayerControll : MonoBehaviour
             transform.position = _teleportAmmoInstance.transform.position;
             partsOut.transform.SetParent(transform);
             FixPosition();
-            _rigidbody.velocity = _teleportAmmoInstance.Velocity;
+            _rigidbody.velocity = Vector2.up * 5f;
 
             _teleportAmmoInstance.Remove();
             _teleportAmmoInstance = null;
@@ -133,7 +134,7 @@ public class PlayerControll : MonoBehaviour
         if (Joystick.Default.Direction.magnitude >= _minJoystickMagnitude && _ammoCount > 0)
         {
             _teleportAmmoInstance = Instantiate(_teleportAmmoPrefab);
-            _teleportAmmoInstance.transform.position = new Vector3(_trajectory.transform.position.x, _trajectory.transform.position.y, 0f);
+            _teleportAmmoInstance.transform.position = new Vector3(_ammoSpawn.position.x, _ammoSpawn.position.y, 0f);
             _teleportAmmoInstance.Shoot(GetForce(Joystick.Default.Direction));
             _ammoCount--;
         }
