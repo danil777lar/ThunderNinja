@@ -805,3 +805,719 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004086 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.103 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3443 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 204.1 MB.
+System memory in use after: 199.6 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 4454.
+Total: 5.120400 ms (FindLiveObjects: 0.365800 ms CreateObjectMapping: 0.176400 ms MarkObjects: 2.674800 ms  DeleteObjects: 1.902500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 471.343059 seconds.
+  path: Assets/Prefabs/Levels/Level_0.prefab
+  artifactKey: Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Levels/Level_0.prefab using Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f572bcf0959431d32b0154a208b17316') in 0.243731 seconds 
+  Import took 0.256707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.641955 seconds.
+  path: Assets/Prefabs/Levels/Level_0.prefab
+  artifactKey: Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Levels/Level_0.prefab using Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705b9a70d92e90196e1cb73e7a851579') in 0.119002 seconds 
+  Import took 0.131772 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003949 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.062 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3443 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 204.3 MB.
+System memory in use after: 199.8 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4493.
+Total: 5.261600 ms (FindLiveObjects: 0.436000 ms CreateObjectMapping: 0.211100 ms MarkObjects: 2.712300 ms  DeleteObjects: 1.901300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 27.900011 seconds.
+  path: Assets/Prefabs/Levels/Level_0.prefab
+  artifactKey: Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Levels/Level_0.prefab using Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a60f0646e18ce32fff7996a8926553') in 0.235623 seconds 
+  Import took 0.247172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.652276 seconds.
+  path: Assets/Prefabs/Levels/Level_0.prefab
+  artifactKey: Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Levels/Level_0.prefab using Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a60f0646e18ce32fff7996a8926553') in 0.104048 seconds 
+  Import took 0.115115 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004067 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.088 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3443 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 204.4 MB.
+System memory in use after: 199.9 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4532.
+Total: 4.851700 ms (FindLiveObjects: 0.377000 ms CreateObjectMapping: 0.184700 ms MarkObjects: 2.319700 ms  DeleteObjects: 1.969700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 111.449303 seconds.
+  path: Assets/Prefabs/Levels/Level_0.prefab
+  artifactKey: Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Levels/Level_0.prefab using Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627b5fe53896b94068cdb3fe92cab4eb') in 0.229544 seconds 
+  Import took 0.241447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001007 seconds.
+  path: Assets/Prefabs/Levels/Level_0.prefab
+  artifactKey: Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Levels/Level_0.prefab using Guid(97408eb3a658f7a40952d4154c4aaea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627b5fe53896b94068cdb3fe92cab4eb') in 0.103869 seconds 
+  Import took 0.116342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 144.673698 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alata-Regular SDF.asset
+  artifactKey: Guid(d70f485aa27dc43f79a8fd168f58435c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alata-Regular SDF.asset using Guid(d70f485aa27dc43f79a8fd168f58435c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71c7aa4e4ba80e314aa07b9b21f2563') in 0.094231 seconds 
+  Import took 0.100098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Purple.asset
+  artifactKey: Guid(23fefbf935fe142d5b724fe3ac908231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Purple.asset using Guid(23fefbf935fe142d5b724fe3ac908231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e276eceb2b999f624335a778300850') in 0.058410 seconds 
+  Import took 0.064512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/ImportedAssets/FarlandSkies/Demo/Materials/GroundTexture.mat
+  artifactKey: Guid(6e3f986af96b0864f9b448013dd16ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/FarlandSkies/Demo/Materials/GroundTexture.mat using Guid(6e3f986af96b0864f9b448013dd16ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af616f50b1b690be03b88556a65b4d15') in 0.008891 seconds 
+  Import took 0.016051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/SurfaceTypes/PA_dirt.mat
+  artifactKey: Guid(c0e0809f80cbce74fba9cabc509c158e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/SurfaceTypes/PA_dirt.mat using Guid(c0e0809f80cbce74fba9cabc509c158e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36276bb4b17d5d2d7824ea1e1ef89592') in 0.141817 seconds 
+  Import took 0.148863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Cylinder.mat
+  artifactKey: Guid(e73f8b2c0a54bbc4bb278889bd39f7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Cylinder.mat using Guid(e73f8b2c0a54bbc4bb278889bd39f7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a128d3ea1081cad0c46e946d6760753') in 0.012812 seconds 
+  Import took 0.020841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Plugins/Animancer/Examples/09 Animator Controllers/02 Hybrid Mini Game/Green.mat
+  artifactKey: Guid(06ff9064589255341be380eefa2b9346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Animancer/Examples/09 Animator Controllers/02 Hybrid Mini Game/Green.mat using Guid(06ff9064589255341be380eefa2b9346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ca341c7e5b9d0c3e4054264a7dae8b') in 0.007172 seconds 
+  Import took 0.015072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/Grenade-Flash.mat
+  artifactKey: Guid(e18627256422adb439639bc7bda3100d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/Grenade-Flash.mat using Guid(e18627256422adb439639bc7bda3100d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa625154edc580f2c5cf6fe1620b56af') in 0.312698 seconds 
+  Import took 0.319512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_White.asset
+  artifactKey: Guid(6408d6b625252462dbf675f3a4945e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_White.asset using Guid(6408d6b625252462dbf675f3a4945e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8274f547eb423f98bdef2b0cc9cfb575') in 0.034883 seconds 
+  Import took 0.044471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadeBlue.mat
+  artifactKey: Guid(c453aed48a2d8ca4bb6d4c13ff4f0fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadeBlue.mat using Guid(c453aed48a2d8ca4bb6d4c13ff4f0fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d205961d7ee0d49f2cd9f108724f05') in 0.009340 seconds 
+  Import took 0.017802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Yellow.asset
+  artifactKey: Guid(35bebacd135324696aa1362e528012c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Yellow.asset using Guid(35bebacd135324696aa1362e528012c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be64fd04f58b5f051a1081d45eaa2236') in 0.036856 seconds 
+  Import took 0.044827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/ImportedAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf4034b249676b1170545c81f93a21e') in 0.049381 seconds 
+  Import took 0.056800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/Grenade-Fire.mat
+  artifactKey: Guid(170dfcc6f5475ee42b98db7c27288eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/Grenade-Fire.mat using Guid(170dfcc6f5475ee42b98db7c27288eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc83245d291fa1f01d123deb7afa99c') in 0.008528 seconds 
+  Import took 0.016717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001356 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/Grenade-Smoke.mat
+  artifactKey: Guid(601cc539d9cf3e14b890c426707874ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/Grenade-Smoke.mat using Guid(601cc539d9cf3e14b890c426707874ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3f18ae35e45bdb6bc530bbe5c5c91d') in 0.008568 seconds 
+  Import took 0.016989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/ImportedAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879fa411c1e620b5cf75c8a22406ff80') in 0.029494 seconds 
+  Import took 0.037842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/Roboto-Regular.ttf
+  artifactKey: Guid(6ed7389dc6cc157418355b24d4ed743d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/Roboto-Regular.ttf using Guid(6ed7389dc6cc157418355b24d4ed743d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815524d68ba3c0246016b27a10768619') in 0.022940 seconds 
+  Import took 0.029780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Hairline SDF.asset
+  artifactKey: Guid(bdd5838a12bdb4fecb0f57cab9cbeaa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Hairline SDF.asset using Guid(bdd5838a12bdb4fecb0f57cab9cbeaa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c80e3fec84d921c652ee123c0bfbd01c') in 0.016348 seconds 
+  Import took 0.022556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/sen/sen-bold.otf
+  artifactKey: Guid(21b3731dcedecc546bf47de8757b4e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/sen/sen-bold.otf using Guid(21b3731dcedecc546bf47de8757b4e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9fa3399c4c9bc8654bc088a9b1de601') in 0.013383 seconds 
+  Import took 0.020806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Peacock.asset
+  artifactKey: Guid(c11de13be4d2d4107ac19ca8c5fcba17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Peacock.asset using Guid(c11de13be4d2d4107ac19ca8c5fcba17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c29f959cfe3a2b350803cd4c8852751c') in 0.039948 seconds 
+  Import took 0.047177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/ImportedAssets/PolygonPrototype/Models/Materials/Arms.mat
+  artifactKey: Guid(63c46b4edfe043e438db851546036952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/PolygonPrototype/Models/Materials/Arms.mat using Guid(63c46b4edfe043e438db851546036952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740d951cb7ef6219f1f48d96d0087c87') in 0.055718 seconds 
+  Import took 0.063066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Regular SDF.asset
+  artifactKey: Guid(2aeee6000ca6d415eb8becac4a681146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Regular SDF.asset using Guid(2aeee6000ca6d415eb8becac4a681146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e97b8b348363ccf652582abd947a9353') in 0.015800 seconds 
+  Import took 0.026332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/sen/sen-regular.otf
+  artifactKey: Guid(1c46d7c29c394ca4686ed5107ea64a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/sen/sen-regular.otf using Guid(1c46d7c29c394ca4686ed5107ea64a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62bfc4ea3c21c88174a58f4c5064346e') in 0.009210 seconds 
+  Import took 0.016166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/ImportedAssets/FarlandSkies/Skyboxes/CloudyCrown_05_Daybreak/CloudyCrown_Daybreak.mat
+  artifactKey: Guid(3930fc89a28b29746bde6a2389a513e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/FarlandSkies/Skyboxes/CloudyCrown_05_Daybreak/CloudyCrown_Daybreak.mat using Guid(3930fc89a28b29746bde6a2389a513e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3521e9cad874ab424fdf3966d45811') in 0.553766 seconds 
+  Import took 0.562942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/ImportedAssets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd5787d5425c2309e755d8baf17b4e94') in 0.009440 seconds 
+  Import took 0.015982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Light.otf
+  artifactKey: Guid(36cf931f19b4e4321beec82ebd5151a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Light.otf using Guid(36cf931f19b4e4321beec82ebd5151a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697b4bd403d15ebbf3b691b6f7df5137') in 0.008615 seconds 
+  Import took 0.014713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Black.otf
+  artifactKey: Guid(23ec0378d395947308381244a7232f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Black.otf using Guid(23ec0378d395947308381244a7232f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd764b33c85755a719f9986d653f017a') in 0.012428 seconds 
+  Import took 0.020208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/ImportedAssets/PolygonPrototype/Models/Materials/Character.mat
+  artifactKey: Guid(a260213968ed1494cbac8b5161dcb39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/PolygonPrototype/Models/Materials/Character.mat using Guid(a260213968ed1494cbac8b5161dcb39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43e48a8b59f2de38223a409c79f8f0e') in 0.006832 seconds 
+  Import took 0.015655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Hairline.otf
+  artifactKey: Guid(aab830692d2674fb5986c3d044f4658f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Hairline.otf using Guid(aab830692d2674fb5986c3d044f4658f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64da0144db57a965c4359d30afabd1ac') in 0.008432 seconds 
+  Import took 0.016163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_ConcreteBlock.mat
+  artifactKey: Guid(814c9855971351d47b17e020a3440381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_ConcreteBlock.mat using Guid(814c9855971351d47b17e020a3440381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f57f9db72012584d9f2b1c7e8fdd372c') in 0.023733 seconds 
+  Import took 0.029652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Navy.asset
+  artifactKey: Guid(157a237f377b5472098c481862d88221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Navy.asset using Guid(157a237f377b5472098c481862d88221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c783333229e7169e875de8f0cdfd751e') in 0.038445 seconds 
+  Import took 0.045769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_OutlineBehind.mat
+  artifactKey: Guid(97aa59554bf2d684d908a7ca26adbc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_OutlineBehind.mat using Guid(97aa59554bf2d684d908a7ca26adbc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1238db70f86ce69652e3355397c55f4') in 0.051446 seconds 
+  Import took 0.057730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_BlendedOutline.mat
+  artifactKey: Guid(dd9f840ab4828ac4691ba7520254328f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/SG Demo Assets/PBS/TCP2_Demo_Robot_BlendedOutline.mat using Guid(dd9f840ab4828ac4691ba7520254328f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '501b4b1cd556f08db6af32d5c11f4987') in 0.021666 seconds 
+  Import took 0.028785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Outline Lit.mat
+  artifactKey: Guid(c29db9de06851b14a986acf12b247cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Outline Lit.mat using Guid(c29db9de06851b14a986acf12b247cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd780f5e41e29e53bbeaf80e48ab0aad2') in 0.868146 seconds 
+  Import took 0.874899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Ground Hybrid.mat
+  artifactKey: Guid(a3577d799040991478f3c045c0ac12bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Ground Hybrid.mat using Guid(a3577d799040991478f3c045c0ac12bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33986c41dac0942e7d8e03826254d4ea') in 0.487068 seconds 
+  Import took 0.496534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Red.asset
+  artifactKey: Guid(6a4acc1fd665c457b814944ef9f70717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Red.asset using Guid(6a4acc1fd665c457b814944ef9f70717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c717f332fe8fce3e691058b8e05205') in 0.033223 seconds 
+  Import took 0.041713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ImportedAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055c42c88dae315977b2074047060a5e') in 0.064754 seconds 
+  Import took 0.074109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Light SDF.asset
+  artifactKey: Guid(95a34b4e1c1774b978f7ca6e4463ed69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Light SDF.asset using Guid(95a34b4e1c1774b978f7ca6e4463ed69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2b1c54a58ed727cb5890f8515e0307') in 0.014239 seconds 
+  Import took 0.021430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadePink.mat
+  artifactKey: Guid(e6c3baf9d13c7374a94f2a3f53a3c3a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadePink.mat using Guid(e6c3baf9d13c7374a94f2a3f53a3c3a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8767157e52068b6518440e898e14e109') in 0.009128 seconds 
+  Import took 0.015602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_NoEffect.asset
+  artifactKey: Guid(ac808af45d56641bd8fd297680e5f1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_NoEffect.asset using Guid(ac808af45d56641bd8fd297680e5f1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4943a3b2b62d252b01a1c8c79c3acc6') in 0.036477 seconds 
+  Import took 0.046724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Pink.asset
+  artifactKey: Guid(5a7f4233285384a448b16ddd0828cb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Pink.asset using Guid(5a7f4233285384a448b16ddd0828cb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f30642d5f07b6c686094f6a2b016d1') in 0.036677 seconds 
+  Import took 0.043396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/ImportedAssets/PolygonPrototype/Models/Materials/lambert4SG3.mat
+  artifactKey: Guid(daa3e158e18e41f4095c685848a9bae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/PolygonPrototype/Models/Materials/lambert4SG3.mat using Guid(daa3e158e18e41f4095c685848a9bae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134e6be96de5602f574a603f13ebec1f') in 0.010347 seconds 
+  Import took 0.018497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/SurfaceTypes/PA_glass.mat
+  artifactKey: Guid(85ac0eb252b85f64c8d7b4b1ca0a68b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/SurfaceTypes/PA_glass.mat using Guid(85ac0eb252b85f64c8d7b4b1ca0a68b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded666cb03f13eed2e3a873b690c101c') in 0.266077 seconds 
+  Import took 0.272750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Plugins/Animancer/Examples/08 Inverse Kinematics/02 Uneven Ground/Obstacle.mat
+  artifactKey: Guid(04844f5cd23ef21438cd022bb37fa5b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Animancer/Examples/08 Inverse Kinematics/02 Uneven Ground/Obstacle.mat using Guid(04844f5cd23ef21438cd022bb37fa5b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941f17e7a8ccf31ec88bb20f60fdf984') in 0.009450 seconds 
+  Import took 0.016076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/ImportedAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d00d8f87d0e45cd1d734315419034c8') in 0.069778 seconds 
+  Import took 0.078335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Regular.ttf
+  artifactKey: Guid(8a406076b7de34849be1f35585875a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Regular.ttf using Guid(8a406076b7de34849be1f35585875a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e01337ff1544f649dd4694b8a8ce24') in 0.009163 seconds 
+  Import took 0.019807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadeGreen.mat
+  artifactKey: Guid(1f734f719a5753b468e8b9c8e6475a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadeGreen.mat using Guid(1f734f719a5753b468e8b9c8e6475a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289b4013a7e99a4807f55264e2e5d7fa') in 0.008130 seconds 
+  Import took 0.015394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Regular.otf
+  artifactKey: Guid(323b38b5207e34b59956e3440b2d0be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Regular.otf using Guid(323b38b5207e34b59956e3440b2d0be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dca916a6c1bde7f57b93ae8aa6da356') in 0.010653 seconds 
+  Import took 0.020349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Blue.asset
+  artifactKey: Guid(82a1d700a82bf4deb99b8510d2741468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Blue.asset using Guid(82a1d700a82bf4deb99b8510d2741468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33db3ab5b033e804e51ecdcc2cd33bcd') in 0.042770 seconds 
+  Import took 0.050183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/ImportedAssets/FarlandSkies/Skyboxes/CloudyCrown_04_Sunset/CloudyCrown_Sunset.mat
+  artifactKey: Guid(169a1b8f06c17c84e8de491f2bfef986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/FarlandSkies/Skyboxes/CloudyCrown_04_Sunset/CloudyCrown_Sunset.mat using Guid(169a1b8f06c17c84e8de491f2bfef986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84a463e91be9d74a623f3a2d0bf45b7') in 0.324845 seconds 
+  Import took 0.332585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Outline.mat
+  artifactKey: Guid(8a8857e285677f740aca9c1b88d890e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Demo TCP2/Hybrid Shader Demo Assets/Robot Hybrid Outline.mat using Guid(8a8857e285677f740aca9c1b88d890e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d3712ec0c63a1ee174e8a37efa9db1c') in 0.738281 seconds 
+  Import took 0.746612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Bold.ttf
+  artifactKey: Guid(26a32e627fb084948ad18b8af0f356b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Bold.ttf using Guid(26a32e627fb084948ad18b8af0f356b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4936ac40559b7bbac1d3be8ead4ebb01') in 0.010364 seconds 
+  Import took 0.016625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Flat.mat
+  artifactKey: Guid(d679fc1da188c4b4099a275053608d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Flat.mat using Guid(d679fc1da188c4b4099a275053608d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568a75229b626786acb79da7a8ed41e1') in 0.008098 seconds 
+  Import took 0.015601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000604 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Crate02.mat
+  artifactKey: Guid(2dccb19f79c2647408ae77d090d29c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Crate02.mat using Guid(2dccb19f79c2647408ae77d090d29c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a61929f60e20a23ec444df06daf278b') in 0.103899 seconds 
+  Import took 0.110758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/Grenade-Gas.mat
+  artifactKey: Guid(56c3030d544f73d4297d4278799476c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/Grenade-Gas.mat using Guid(56c3030d544f73d4297d4278799476c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd866a294d586b9f90134f21b38b55060') in 0.006827 seconds 
+  Import took 0.012539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Orange.asset
+  artifactKey: Guid(44d1db69cd36f45968a97961a98720c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Orange.asset using Guid(44d1db69cd36f45968a97961a98720c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4665b3fb4eb31484b39eb7710f69125') in 0.030084 seconds 
+  Import took 0.035760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/ImportedAssets/Aligned Games/Polygonal Modern Weapons Asset Package/Art/Materials/atlass_1.mat
+  artifactKey: Guid(85e89f3b829c70a4a85a798f89bd18ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Aligned Games/Polygonal Modern Weapons Asset Package/Art/Materials/atlass_1.mat using Guid(85e89f3b829c70a4a85a798f89bd18ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30661d73fecac292439699156e3c9cc5') in 0.006865 seconds 
+  Import took 0.014771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/ImportedAssets/PolygonPrototype/Models/Materials/lambert4SG4.mat
+  artifactKey: Guid(905ebc06b3b6dbc4f9cef4af52e4d418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/PolygonPrototype/Models/Materials/lambert4SG4.mat using Guid(905ebc06b3b6dbc4f9cef4af52e4d418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec1445f7a3a259a40d64f2e804e36e0') in 0.006912 seconds 
+  Import took 0.013573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Bold.otf
+  artifactKey: Guid(fe2a271c553cc4642936c59b7e697d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Montserrat-Bold.otf using Guid(fe2a271c553cc4642936c59b7e697d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2005564baf7fe177fee4ec861498e0') in 0.008461 seconds 
+  Import took 0.016192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Medium.ttf
+  artifactKey: Guid(fbfe696d18b99b946afae6126b37c025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/JMO Assets/Toony Colors Pro/Editor/Fonts/Roboto/Roboto-Medium.ttf using Guid(fbfe696d18b99b946afae6126b37c025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '752e18ded9e66139c1d836bee253e27a') in 0.010414 seconds 
+  Import took 0.019565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadeRed.mat
+  artifactKey: Guid(ad6aa9a59bea82c4a81e08034460a820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadeRed.mat using Guid(ad6aa9a59bea82c4a81e08034460a820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f403d8286873723a729deaa46f9ec2') in 0.008499 seconds 
+  Import took 0.015271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Plugins/Animancer/Examples/09 Animator Controllers/03 3D Game Kit/Fake Enemy.mat
+  artifactKey: Guid(740026eefe7b72b409561e63cd33d592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Animancer/Examples/09 Animator Controllers/03 3D Game Kit/Fake Enemy.mat using Guid(740026eefe7b72b409561e63cd33d592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f92a4cf175a9317630ef789e6a48cb') in 0.038872 seconds 
+  Import took 0.046501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadeYellow.mat
+  artifactKey: Guid(d72f7ab5b6eff7540bcb4a924b30db74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadeYellow.mat using Guid(d72f7ab5b6eff7540bcb4a924b30db74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bce36a7561cc57e370b3a7b4f379ff') in 0.009665 seconds 
+  Import took 0.018264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Green.asset
+  artifactKey: Guid(5ddc33bf4cc0e48d5be2173c89287d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/GUI Kit - Neon/ResourceData/Fonts/Alphabet_Neon_Green.asset using Guid(5ddc33bf4cc0e48d5be2173c89287d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a014fb061e14c728a655ce01901e5c') in 0.038239 seconds 
+  Import took 0.049083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadePurple.mat
+  artifactKey: Guid(596a4c2a15b92224f9f938aec4f2762c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Materials/Misc/Grenades/GrenadePurple.mat using Guid(596a4c2a15b92224f9f938aec4f2762c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9283b153f0f59b20b73503bb8542bcb2') in 0.010304 seconds 
+  Import took 0.019274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Floor_4x4_Big.mat
+  artifactKey: Guid(b6e9b288b2de6dc418ba7e193bf11c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Floor_4x4_Big.mat using Guid(b6e9b288b2de6dc418ba7e193bf11c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2531a1329a498050da74509a4404c5e3') in 0.015236 seconds 
+  Import took 0.023318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Floor_4x4_Small.mat
+  artifactKey: Guid(0ecbf6a59a1881f4487c02d3f6997861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Floor_4x4_Small.mat using Guid(0ecbf6a59a1881f4487c02d3f6997861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb268db5c0bb968e7349d9ace83bb75') in 0.013000 seconds 
+  Import took 0.022600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Crate01.mat
+  artifactKey: Guid(e05751f7808f83a4ea0bfe18b9d5cac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Polygon Arsenal/Demo/Materials/PA_Crate01.mat using Guid(e05751f7808f83a4ea0bfe18b9d5cac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c083dd54e75665ffebc9af4f593b9d') in 0.102934 seconds 
+  Import took 0.114064 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004175 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.212 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3443 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 206.0 MB.
+System memory in use after: 201.5 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4576.
+Total: 5.239000 ms (FindLiveObjects: 0.432100 ms CreateObjectMapping: 0.193600 ms MarkObjects: 2.546700 ms  DeleteObjects: 2.065600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 68.573990 seconds.
+  path: Assets/Wind Zone.prefab
+  artifactKey: Guid(464a6446a839ea94db3fd0443da0c08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wind Zone.prefab using Guid(464a6446a839ea94db3fd0443da0c08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9666b46dbc25af4e5b04af520a0bcb9') in 0.029523 seconds 
+  Import took 0.037693 seconds .
+
