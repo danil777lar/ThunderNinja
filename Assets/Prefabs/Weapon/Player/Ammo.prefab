@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6398163573149465100}
   - component: {fileID: 7462048383508587990}
   - component: {fileID: 5823106170252925333}
-  - component: {fileID: 2393064539444276021}
+  - component: {fileID: 6894425987720786508}
   m_Layer: 7
   m_Name: Ammo
   m_TagString: Untagged
@@ -99,8 +99,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &2393064539444276021
-CircleCollider2D:
+--- !u!70 &6894425987720786508
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -112,9 +112,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.14
+  m_Offset: {x: -0.05, y: 0}
+  m_Size: {x: 0.48, y: 0.06}
+  m_Direction: 1
 --- !u!1001 &7106957913920845536
 PrefabInstance:
   m_ObjectHideFlags: 0

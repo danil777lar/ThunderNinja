@@ -64,6 +64,20 @@ public class TeleportAmmo : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void SetActiveSimplePhysics(bool arg)
+    {
+        _computePath = false;
+
+        if (arg)
+        {
+            StopAllCoroutines();
+        }
+        else 
+        {
+            StartCoroutine(FallAnim());
+        }
+    }
+
 
     private IEnumerator FallAnim() 
     {
