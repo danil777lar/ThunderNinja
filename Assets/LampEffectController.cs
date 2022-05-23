@@ -6,10 +6,12 @@ public class LampEffectController : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _parts;
     [SerializeField] private Light _light;
-    [SerializeField] private Transform _raycastRoot;
 
     private void Start()
     {
-        
+        ParticleSystem.MainModule main = _parts.main;
+        main.startColor = _light.color;
+        ParticleSystem.ShapeModule shape = _parts.shape;
+        shape.angle = _light.spotAngle / 2f;
     }
 }
