@@ -10,9 +10,7 @@ public class EnemyVisionTarget : MonoBehaviour
     public static EnemyVisionTarget Default => _default;
     #endregion
 
-    public bool _isInLight;
-    public int _lightCount;
-
+    private bool _isInLight;
     private BoxCollider2D _collider;
     private List<Light> _sceneLights;
 
@@ -48,17 +46,27 @@ public class EnemyVisionTarget : MonoBehaviour
 
     private void UpdateLightState() 
     {
-        _lightCount = _sceneLights.Count;
         foreach (Light light in _sceneLights) 
         {
-            Vector2 direction = _collider.bounds.center - light.transform.position;
-            if (Vector2.Angle(direction, light.transform.forward) <= light.spotAngle / 2f)
+            List<Vector2> directions = new List<Vector2>();
+            directions.Add(_collider.bounds.max - light.transform.position);
+            directions.Add((_collider.bounds.max - Vector3.right * _collider.size.x) - light.transform.position);
+            directions.Add(_collider.bounds.min - light.transform.position);
+            directions.Add((_collider.bounds.max + Vector3.right * _collider.size.x) - light.transform.position);
+
+            foreach (Vector2 direction in directions)
             {
-                RaycastHit2D hit = Physics2D.Raycast(light.transform.position, direction, 1000f, LayerMask.GetMask("Default", "PlayerRaycastTarget"));
-                if (hit && hit.collider.gameObject.layer == LayerMask.NameToLayer("PlayerRaycastTarget"))
+                if (Vector2.Angle(direction, light.transform.forward) <= light.spotAngle / 2f)
                 {
-                    _isInLight = true;
-                    return;
+                    RaycastHit2D hit = Physics2D.Raycast(light.transform.position, direction, 1000f, LayerMask.GetMask("Default", "PlayerRaycastTarget"));
+                    if (hit && hit.collider.gameObject.layer != LayerMask.NameToLayer("PlayerRaycastTarget")) 
+                        Debug.DrawLine(light.transform.position, hit.point, Color.red);
+                    if (hit && hit.collider.gameObject.layer == LayerMask.NameToLayer("PlayerRaycastTarget"))
+                    {
+                        Debug.DrawLine(light.transform.position, hit.point, Color.green);
+                        _isInLight = true;
+                        //return;
+                    }
                 }
             }
         }

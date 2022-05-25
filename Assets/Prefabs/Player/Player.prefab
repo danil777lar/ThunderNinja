@@ -977,6 +977,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86baf84bae068b47b29023eb2df5cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _contactLayers:
+  - Default
+  - PlayerWeaponNonContact
 --- !u!114 &1037271485840174156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,8 +992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1814940c2a1f44d81ee1cb6ee6e8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isInLight: 0
-  _lightCount: 0
 --- !u!50 &484533668917627053
 Rigidbody2D:
   serializedVersion: 4

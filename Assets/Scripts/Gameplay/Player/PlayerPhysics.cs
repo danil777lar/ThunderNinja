@@ -8,6 +8,8 @@ using DG.Tweening;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerPhysics : MonoBehaviour
 {
+    [SerializeField] private string[] _contactLayers;
+
     private Rigidbody2D _rb;
     private BoxCollider2D _collider; 
     private Tween _gravityChangeTween;
@@ -110,7 +112,7 @@ public class PlayerPhysics : MonoBehaviour
     private bool CastByDirection(Vector2 direction) 
     {
         ContactFilter2D filter = new ContactFilter2D();
-        filter.layerMask = LayerMask.GetMask("Default");
+        filter.layerMask = LayerMask.GetMask(_contactLayers);
         filter.useLayerMask = true;
 
         RaycastHit2D[] hits = new RaycastHit2D[1]; 
@@ -124,7 +126,7 @@ public class PlayerPhysics : MonoBehaviour
         for (int i = 0; i < castCount; i++)
         {
             Vector3 origin = transform.position + (Vector3.up * Mathf.Lerp(0f, _collider.size.y, (float)i / (float)castCount));
-            RaycastHit2D hit = Physics2D.Raycast(origin, direction, _collider.size.x, LayerMask.GetMask("Default"));
+            RaycastHit2D hit = Physics2D.Raycast(origin, direction, _collider.size.x, LayerMask.GetMask(_contactLayers));
             if (hit && !hit.collider.OverlapPoint(origin))
             {
                 hits++;

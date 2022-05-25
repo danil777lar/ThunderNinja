@@ -8267,7 +8267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7486728602945924692, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.125
+      value: -4.89
       objectReference: {fileID: 0}
     - target: {fileID: 7486728602945924692, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8310,8 +8310,12 @@ PrefabInstance:
       value: Wind Zone (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7486728602945924695, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486728602945924695, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
       propertyPath: m_Size.y
-      value: 4.552085
+      value: 4.46
       objectReference: {fileID: 0}
     - target: {fileID: 7486728602945924695, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
       propertyPath: m_Offset.y
@@ -8868,6 +8872,10 @@ PrefabInstance:
     - target: {fileID: 4403753779016124299, guid: c4b5efdd2e4d575489d879519d327a7b, type: 3}
       propertyPath: m_Name
       value: Vent_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403753779016124299, guid: c4b5efdd2e4d575489d879519d327a7b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4b5efdd2e4d575489d879519d327a7b, type: 3}
@@ -10937,7 +10945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7486728602945924695, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
       propertyPath: m_Size.x
-      value: 0.7321701
+      value: 0.8462982
       objectReference: {fileID: 0}
     - target: {fileID: 7486728602945924695, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
       propertyPath: m_Size.y
@@ -10945,7 +10953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7486728602945924695, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
       propertyPath: m_Offset.x
-      value: -0.02060318
+      value: 0.0022220612
       objectReference: {fileID: 0}
     - target: {fileID: 7486728602945924695, guid: 464a6446a839ea94db3fd0443da0c08a, type: 3}
       propertyPath: m_Offset.y
@@ -12209,7 +12217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399548490716766545, guid: c4b5efdd2e4d575489d879519d327a7b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.125
+      value: -4.793
       objectReference: {fileID: 0}
     - target: {fileID: 4399548490716766545, guid: c4b5efdd2e4d575489d879519d327a7b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12246,6 +12254,10 @@ PrefabInstance:
     - target: {fileID: 4403753779016124299, guid: c4b5efdd2e4d575489d879519d327a7b, type: 3}
       propertyPath: m_Name
       value: Vent_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403753779016124299, guid: c4b5efdd2e4d575489d879519d327a7b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4b5efdd2e4d575489d879519d327a7b, type: 3}
