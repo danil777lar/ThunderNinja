@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Slider))]
 public class AmmoCounter : MonoBehaviour
 {
-    private Slider _slider;
+/*    private Slider _slider;
     private PlayerControll _playerControll;
 
 
@@ -21,5 +21,5 @@ public class AmmoCounter : MonoBehaviour
     private void Update()
     {
         _slider.value = Mathf.Lerp(_slider.value, (float)_playerControll.AmmoCount, Time.deltaTime * 10f);
-    }
+    }*/
 }

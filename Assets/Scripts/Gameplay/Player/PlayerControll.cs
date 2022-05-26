@@ -10,11 +10,10 @@ using DG.Tweening;
 public class PlayerControll : MonoBehaviour
 {
     [SerializeField] private float _force;
-    [SerializeField] private float _maxRange;
+    [SerializeField] private float _loadTime;
+    [SerializeField] private float _ammoDistance;
     [Space]
     [SerializeField] private float _minJoystickMagnitude;
-    [Space]
-    [SerializeField] private int _maxAmmoCount;
     [Header("Links")]
     [SerializeField] private Transform _ammoSpawn;
     [SerializeField] private TrajectoryDrawer _trajectory;
@@ -24,15 +23,13 @@ public class PlayerControll : MonoBehaviour
     [SerializeField] private ParticleSystem _teleportInParticles;
     [SerializeField] private ParticleSystem _teleportOutParticles;
 
-    private int _ammoCount;
+    private float _loadTimePassed;
 
     private Rigidbody2D _rigidbody;
     private PlayerPhysics _physics;
     private BoxCollider2D _collider;
     private TeleportAmmo _teleportAmmoInstance;
 
-    public int AmmoCount => _ammoCount;
-    public int MaxAmmoCount => _maxAmmoCount;
     public bool ComputeAim { get; private set; }
     public Vector2 AimDirection { get; private set; }
 
@@ -46,15 +43,11 @@ public class PlayerControll : MonoBehaviour
         _collider = GetComponent<BoxCollider2D>();
         _physics = GetComponent<PlayerPhysics>();
 
-        _physics.AttachedToAnySurface += OnAttachedToAnySurface;
-
         Joystick.Initialized += LinkSlideArea;
         if (Joystick.Default) 
         {
             LinkSlideArea();
         }
-
-        _ammoCount = _maxAmmoCount;
     }
 
     private void Update()
@@ -83,15 +76,18 @@ public class PlayerControll : MonoBehaviour
 
         if (Joystick.Default.Direction.magnitude < _minJoystickMagnitude)
         {
+            _loadTimePassed = 0f;
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
             _trajectory.HideTrajectory();
             ComputeAim = false;
         }
-        else if (_ammoCount > 0)
+        else
         {
+            _loadTimePassed += Time.deltaTime / Time.timeScale;
             Time.timeScale = 0.1f;
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
+            _trajectory.maxLenght = _ammoDistance * Mathf.Min(_loadTimePassed / _loadTime, 1f);
             _trajectory.ShowTrajectory(GetForce(Joystick.Default.Direction));
             ComputeAim = true;
             AimDirection = GetForce(Joystick.Default.Direction);
@@ -131,18 +127,12 @@ public class PlayerControll : MonoBehaviour
     private void OnPointerUp() 
     {
         _trajectory.HideTrajectory();
-        if (Joystick.Default.Direction.magnitude >= _minJoystickMagnitude && _ammoCount > 0)
+        if (Joystick.Default.Direction.magnitude >= _minJoystickMagnitude && _loadTimePassed >= _loadTime)
         {
             _teleportAmmoInstance = Instantiate(_teleportAmmoPrefab, GameObject.FindGameObjectWithTag("Level").transform, true);
             _teleportAmmoInstance.transform.position = new Vector3(_ammoSpawn.position.x, _ammoSpawn.position.y, 0f);
             _teleportAmmoInstance.Shoot(GetForce(Joystick.Default.Direction));
-            _ammoCount--;
         }
-    }
-
-    private void OnAttachedToAnySurface() 
-    {
-        _ammoCount = _maxAmmoCount;
     }
 
 

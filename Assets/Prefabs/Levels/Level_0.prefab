@@ -4109,6 +4109,14 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3383425146480075747, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383523349223626089, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4336683303489264212, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 39.930927
@@ -4184,6 +4192,10 @@ PrefabInstance:
     - target: {fileID: 6808056413581373087, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808862330161491398, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6860871709258763848, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -7613,6 +7625,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3383625850050468565, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4336683303489264212, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 39.930927
@@ -7688,6 +7704,10 @@ PrefabInstance:
     - target: {fileID: 6808056413581373087, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808862330161491398, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6860871709258763848, guid: 50e5dd8670a793c419d28dcc595dcf88, type: 3}
       propertyPath: m_ConnectedAnchor.x

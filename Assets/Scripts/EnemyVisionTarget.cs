@@ -10,8 +10,9 @@ public class EnemyVisionTarget : MonoBehaviour
     public static EnemyVisionTarget Default => _default;
     #endregion
 
+    [SerializeField] private BoxCollider2D _collider;
+
     private bool _isInLight;
-    private BoxCollider2D _collider;
     private List<Light> _sceneLights;
 
 
@@ -22,7 +23,6 @@ public class EnemyVisionTarget : MonoBehaviour
 
     private void Start()
     {
-        _collider = GetComponent<BoxCollider2D>();
         _sceneLights = new List<Light>(FindObjectsOfType<Light>());
         _sceneLights = _sceneLights.FindAll((l) => l.type == LightType.Spot);
     }
@@ -49,10 +49,10 @@ public class EnemyVisionTarget : MonoBehaviour
         foreach (Light light in _sceneLights) 
         {
             List<Vector2> directions = new List<Vector2>();
-            directions.Add(_collider.bounds.max - light.transform.position);
-            directions.Add((_collider.bounds.max - Vector3.right * _collider.size.x) - light.transform.position);
-            directions.Add(_collider.bounds.min - light.transform.position);
-            directions.Add((_collider.bounds.max + Vector3.right * _collider.size.x) - light.transform.position);
+            directions.Add(Vector3.MoveTowards(_collider.bounds.max, _collider.bounds.center, 0.05f) - light.transform.position);
+            directions.Add(Vector3.MoveTowards((_collider.bounds.max - Vector3.right * _collider.size.x), _collider.bounds.center, 0.05f) - light.transform.position);
+            directions.Add(Vector3.MoveTowards(_collider.bounds.min, _collider.bounds.center, 0.05f) - light.transform.position);
+            directions.Add(Vector3.MoveTowards((_collider.bounds.min + Vector3.right * _collider.size.x), _collider.bounds.center, 0.05f) - light.transform.position);
 
             foreach (Vector2 direction in directions)
             {
@@ -65,7 +65,7 @@ public class EnemyVisionTarget : MonoBehaviour
                     {
                         Debug.DrawLine(light.transform.position, hit.point, Color.green);
                         _isInLight = true;
-                        //return;
+                        return;
                     }
                 }
             }
