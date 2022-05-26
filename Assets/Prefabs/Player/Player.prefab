@@ -7430,7 +7430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _force: 25
-  _loadTime: 1
+  _loadTime: 0.25
   _ammoDistance: 4
   _minJoystickMagnitude: 0.5
   _ammoSpawn: {fileID: 5653867327960904957}
@@ -7451,6 +7451,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86baf84bae068b47b29023eb2df5cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _defaultGravityScale: 2
+  _ceilAttachDuration: 0
+  _ceilGravityScale: 2
+  _wallsAttachDuration: 1
+  _wallsAttachGravityScale: 0
+  _wallsDeattachGravityScale: 1
   _contactLayers:
   - Default
   - PlayerWeaponNonContact

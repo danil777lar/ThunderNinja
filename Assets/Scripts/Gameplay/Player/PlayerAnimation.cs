@@ -23,7 +23,7 @@ public class PlayerAnimation : MonoBehaviour
     private Vector3 _ikPosition;
 
     private NamedAnimancerComponent _animancer;
-    private PlayerPhysics _physics;
+    private CharacterPhysics _physics;
     private PlayerControll _controll;
     private IEnumerator _updateAnimDelayCoroutine;
 
@@ -31,7 +31,7 @@ public class PlayerAnimation : MonoBehaviour
     private void Start()
     {
         _animancer = GetComponent<NamedAnimancerComponent>();
-        _physics = GetComponentInParent<PlayerPhysics>();
+        _physics = GetComponentInParent<CharacterPhysics>();
         _controll = GetComponentInParent<PlayerControll>();
 
         _controll.PlayerTeleported += OnPlayerTeleported;
@@ -100,10 +100,10 @@ public class PlayerAnimation : MonoBehaviour
             else 
                 anim = _idleAnim;
         }
-        else if (_physics.IsCeiled)
+/*        else if (_physics.IsCeiled)
         {
             anim = _ceilHangAnim;
-        }
+        }*/
         else if (_physics.IsLeftWallSlide)
         {
             anim = _wallHangAnim;

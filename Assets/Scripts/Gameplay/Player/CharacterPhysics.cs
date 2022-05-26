@@ -6,12 +6,23 @@ using Animancer;
 using DG.Tweening;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerPhysics : MonoBehaviour
+[RequireComponent(typeof(BoxCollider2D))]
+public class CharacterPhysics : MonoBehaviour
 {
+    [Header("Default")]
+    [SerializeField] private float _defaultGravityScale;
+    [Header("Ceil")]
+    [SerializeField] private float _ceilAttachDuration;
+    [SerializeField] private float _ceilGravityScale;
+    [Header("Walls")]
+    [SerializeField] private float _wallsAttachDuration;
+    [SerializeField] private float _wallsAttachGravityScale;
+    [SerializeField] private float _wallsDeattachGravityScale;
+    [Space]
     [SerializeField] private string[] _contactLayers;
 
-    private Rigidbody2D _rb;
-    private BoxCollider2D _collider; 
+    protected Rigidbody2D _rb;
+    protected BoxCollider2D _collider; 
     private Tween _gravityChangeTween;
 
     private bool _isGrounded = true;
@@ -92,9 +103,9 @@ public class PlayerPhysics : MonoBehaviour
     private void FixedUpdate()
     {
         IsGrounded = CastByDirection(Vector2.down);
-        //IsCeiled = CastByDirection(Vector2.up) && !IsGrounded;
-        IsRightWallSlide = CastByDirection(Vector2.right) && !IsGrounded && !IsCeiled && RaycastHeight(Vector2.right);
-        IsLeftWallSlide = CastByDirection(Vector2.left) && !IsGrounded && !IsCeiled && !IsRightWallSlide && RaycastHeight(Vector2.left);
+        IsCeiled = CastByDirection(Vector2.up) && !IsGrounded;
+        IsRightWallSlide = CastByDirection(Vector2.right) && !IsGrounded && !IsCeiled && RaycastHeight(Vector2.right, 20, _collider.size.x) == 20;
+        IsLeftWallSlide = CastByDirection(Vector2.left) && !IsGrounded && !IsCeiled && !IsRightWallSlide && RaycastHeight(Vector2.left, 20, _collider.size.x) == 20;
 
         if (!IsCeiled && !IsRightWallSlide && !IsLeftWallSlide) 
         {
@@ -119,50 +130,49 @@ public class PlayerPhysics : MonoBehaviour
         return _rb.Cast(direction, filter, hits, 0.05f) > 0;
     }
 
-    private bool RaycastHeight(Vector2 direction) 
+    protected int RaycastHeight(Vector2 direction, int castCount, float distance) 
     {
-        int castCount = 20;
         int hits = 0;
         for (int i = 0; i < castCount; i++)
         {
             Vector3 origin = transform.position + (Vector3.up * Mathf.Lerp(0f, _collider.size.y, (float)i / (float)castCount));
-            RaycastHit2D hit = Physics2D.Raycast(origin, direction, _collider.size.x, LayerMask.GetMask(_contactLayers));
+            RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, LayerMask.GetMask(_contactLayers));
             if (hit && !hit.collider.OverlapPoint(origin))
             {
                 hits++;
             }
         }
 
-        return hits == castCount;
+        return hits;
     }
 
     private void AttachToGround() 
     {
         AttachedToAnySurface?.Invoke();
         _gravityChangeTween?.Kill();
-        _rb.gravityScale = 2f;
+        _rb.gravityScale = _defaultGravityScale;
     }
 
     private void AttachToCeil() 
     {
         AttachedToAnySurface?.Invoke();
         _gravityChangeTween?.Kill();
-        _rb.gravityScale = 0f;
+        _rb.gravityScale = _ceilGravityScale;
         _rb.velocity = Vector2.zero;
-        _gravityChangeTween = DOTween.To(() => 0f, (v) => { }, 0f, 0.25f)
-            .OnComplete(() => _rb.gravityScale = 2f);
+        _gravityChangeTween = DOTween.To(() => 0f, (v) => { }, 0f, _ceilAttachDuration)
+            .OnComplete(() => _rb.gravityScale = _defaultGravityScale);
     }
 
     private void AttachToWall() 
     {
         AttachedToAnySurface?.Invoke();
         _gravityChangeTween?.Kill();
-        _rb.gravityScale = 0f;
+        _rb.gravityScale = _wallsAttachGravityScale;
         _rb.velocity = Vector2.zero;
-        _gravityChangeTween = DOTween.To(() => 0f, (v) => { }, 0f, 1f)
+        _gravityChangeTween = DOTween.To(() => 0f, (v) => { }, 0f, _wallsAttachDuration)
             .OnComplete(() => 
             {
-                _gravityChangeTween = DOTween.To(() => 0f, (v) => _rb.gravityScale = v, 0.2f, 3f);
+                _rb.gravityScale = _wallsDeattachGravityScale;
             });
     }
 }

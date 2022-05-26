@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using DG.Tweening;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(PlayerPhysics))]
+[RequireComponent(typeof(CharacterPhysics))]
 public class PlayerControll : MonoBehaviour
 {
     [SerializeField] private float _force;
@@ -26,7 +26,7 @@ public class PlayerControll : MonoBehaviour
     private float _loadTimePassed;
 
     private Rigidbody2D _rigidbody;
-    private PlayerPhysics _physics;
+    private CharacterPhysics _physics;
     private BoxCollider2D _collider;
     private TeleportAmmo _teleportAmmoInstance;
 
@@ -41,7 +41,7 @@ public class PlayerControll : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _collider = GetComponent<BoxCollider2D>();
-        _physics = GetComponent<PlayerPhysics>();
+        _physics = GetComponent<CharacterPhysics>();
 
         Joystick.Initialized += LinkSlideArea;
         if (Joystick.Default) 
