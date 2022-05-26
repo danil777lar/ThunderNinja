@@ -130,15 +130,16 @@ public class CharacterPhysics : MonoBehaviour
         return _rb.Cast(direction, filter, hits, 0.05f) > 0;
     }
 
-    protected int RaycastHeight(Vector2 direction, int castCount, float distance) 
+    protected int RaycastHeight(Vector2 direction, int castCount, float distance, float heightOffset = 0f) 
     {
         int hits = 0;
         for (int i = 0; i < castCount; i++)
         {
-            Vector3 origin = transform.position + (Vector3.up * Mathf.Lerp(0f, _collider.size.y, (float)i / (float)castCount));
+            Vector3 origin = transform.position + (Vector3.up * Mathf.Lerp(0f + heightOffset, _collider.size.y - heightOffset, (float)i / (float)castCount));
             RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, LayerMask.GetMask(_contactLayers));
             if (hit && !hit.collider.OverlapPoint(origin))
             {
+                Debug.DrawLine(origin, hit.point, Color.green);
                 hits++;
             }
         }

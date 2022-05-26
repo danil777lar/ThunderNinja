@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CharacterMover : CharacterPhysics
 {
-    [Space, Space]
+    [Space]
     [Header("Character Mover")]
     [SerializeField] private float _detectionDistance;
 
@@ -14,9 +14,9 @@ public class CharacterMover : CharacterPhysics
 
     public void Move(Vector2 velocity) 
     {
+        velocity.y = 0f;
         if (IsGrounded && !DetectWall(velocity.normalized))
         {
-            velocity.y = 0f;
             _rb.velocity = velocity;
         }
         else 
@@ -27,8 +27,9 @@ public class CharacterMover : CharacterPhysics
 
     private bool DetectWall(Vector2 direction) 
     {
-        bool wallDetected = RaycastHeight(direction, 20, (_collider.size.x / 2f) + _detectionDistance) != 0;
-        WallDetected?.Invoke(direction);
+        bool wallDetected = RaycastHeight(direction, 20, (_collider.size.x / 2f) + _detectionDistance, 0.05f) != 0;
+        if (wallDetected)
+            WallDetected?.Invoke(direction);
         return wallDetected;
     }
 }

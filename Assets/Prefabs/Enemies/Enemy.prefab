@@ -3355,6 +3355,7 @@ GameObject:
   - component: {fileID: 6808056413581373086}
   - component: {fileID: 6808056413581373080}
   - component: {fileID: 6808056413581373081}
+  - component: {fileID: 5436040547298723540}
   - component: {fileID: 6561602516255319278}
   m_Layer: 6
   m_Name: Enemy
@@ -3399,7 +3400,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &6808056413581373081
 BoxCollider2D:
@@ -3427,6 +3428,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8170857}
   m_EdgeRadius: 0
+--- !u!114 &5436040547298723540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808056413581373087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa758b82edd077e4bbe714ce535f4a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _usePatrol: 0
+  _patrolSpeed: 5
+  _patrolDelay: 1
+  _rightPatrolBound: {fileID: 0}
+  _leftPatrolBound: {fileID: 0}
 --- !u!114 &6561602516255319278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3449,8 +3467,6 @@ MonoBehaviour:
   - Default
   - PlayerWeaponNonContact
   _detectionDistance: 1
-  _move: 0
-  _moveRight: 0
 --- !u!1 &6808056413680300854
 GameObject:
   m_ObjectHideFlags: 0
