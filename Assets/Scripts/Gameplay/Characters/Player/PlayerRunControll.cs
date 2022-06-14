@@ -10,6 +10,8 @@ public class PlayerRunControll : MonoBehaviour
     private Joystick _joystick;
     private CharacterMover _mover;
 
+    public Vector2 MoveSpeed { get; private set; }
+
 
     private void Start()
     {
@@ -31,11 +33,13 @@ public class PlayerRunControll : MonoBehaviour
 
     private void TryComputeWalk() 
     {
+        MoveSpeed = Vector2.zero;
         if (!_joystick) return;
 
         if (_joystick.Direction.x != 0f)
         {
-            _mover.Move(_joystick.Direction * _moveSpeed);
+            MoveSpeed = _joystick.Direction * _moveSpeed;
+            _mover.Move(MoveSpeed);
         }
     }
 
