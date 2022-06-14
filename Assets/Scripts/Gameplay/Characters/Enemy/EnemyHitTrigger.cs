@@ -21,7 +21,7 @@ public class EnemyHitTrigger : MonoBehaviour
     {
         if (_isKilled) return;
 
-        if (collision.GetComponent<PlayerControll>())
+        if (collision.GetComponent<PlayerJumpControll>())
         {
             _isKilled = true;
 

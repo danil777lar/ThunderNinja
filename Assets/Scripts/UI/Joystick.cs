@@ -7,12 +7,25 @@ using DG.Tweening;
 
 public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    #region Singleton
-    private static Joystick _default;
-    public static Joystick Default => _default;
-    public static Action Initialized;
+    #region Static
+    private static Dictionary<JoystickPlacement, Joystick> _joysticksByPlacements = new Dictionary<JoystickPlacement, Joystick>();
+
+    public static IEnumerator WaitJoystickInit(JoystickPlacement placement)
+    {
+        while (!_joysticksByPlacements.ContainsKey(placement))
+            yield return null;
+    }
+
+    public static Joystick GetJoystick(JoystickPlacement placement) 
+    {
+        return _joysticksByPlacements[placement];
+    }
     #endregion
 
+
+    public enum JoystickPlacement { Left, Right }
+
+    [SerializeField] private JoystickPlacement _placement;
     [SerializeField] private Transform _joystick;
     [SerializeField] private Transform _joystickArea;
 
@@ -27,9 +40,8 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
 
     private void Awake()
     {
-        _default = this;
+        _joysticksByPlacements[_placement] = this;
         _group = GetComponent<CanvasGroup>();
-        Initialized?.Invoke();
     }
 
     private void OnEnable()
@@ -43,6 +55,12 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
     {
         Direction = Vector2.zero;
         _group.alpha = 0f;
+    }
+
+    private void OnDestroy()
+    {
+        if (_joysticksByPlacements.ContainsKey(_placement) && _joysticksByPlacements[_placement] == this)
+            _joysticksByPlacements[_placement] = null;
     }
 
 

@@ -6336,12 +6336,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _idleAnim: {fileID: -203655887218126122, guid: f29c09fb5cf75944885df5f81ed3bb4b, type: 3}
+  _walkAnim: {fileID: -203655887218126122, guid: 47c56378cf3177040baa57306d3d5789, type: 3}
   _fallAnim: {fileID: -203655887218126122, guid: ee683edaedc4a1d4fb522c4c2dc3cbe2, type: 3}
   _flyAnim: {fileID: -203655887218126122, guid: e554968412898d64d9c2febc5a69a256, type: 3}
   _wallHangAnim: {fileID: -203655887218126122, guid: 9c0c9d6af597de7418565219de21b66f, type: 3}
   _ceilHangAnim: {fileID: -203655887218126122, guid: 035e591eb0a651444ab89ea5a224d010, type: 3}
   _landAnim: {fileID: -203655887218126122, guid: 1322862733e223a41aa23525b4449377, type: 3}
-  _rollAnim: {fileID: -4791504522942941401, guid: 7d972090a9feec84e8ede41d4eddba7c, type: 3}
+  _walkAnimSpeedScale: 0.5
   _armRoot: {fileID: 4609722583918938092}
 --- !u!1 &6071386556873191732
 GameObject:
@@ -7386,7 +7387,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6072340348131799526}
   - component: {fileID: 388136009837912567}
-  - component: {fileID: 5683947726267859247}
+  - component: {fileID: 2547685399728221657}
+  - component: {fileID: 3723419762626763047}
   - component: {fileID: 1037271485840174156}
   - component: {fileID: 484533668917627053}
   - component: {fileID: 4956603362281691018}
@@ -7439,7 +7441,7 @@ MonoBehaviour:
   _bodyHolder: {fileID: 3036160799796691310}
   _teleportInParticles: {fileID: 4546566803056878092, guid: af9a92de2766faf409204c5db7f36b6e, type: 3}
   _teleportOutParticles: {fileID: 4546566803056878092, guid: af9a92de2766faf409204c5db7f36b6e, type: 3}
---- !u!114 &5683947726267859247
+--- !u!114 &2547685399728221657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7448,7 +7450,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 6072340348131799527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f86baf84bae068b47b29023eb2df5cee, type: 3}
+  m_Script: {fileID: 11500000, guid: 25800004e5e39324cba8b2c71def3557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 3
+--- !u!114 &3723419762626763047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6072340348131799527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185ba746ae5ceeb4ba152773b011b81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _defaultGravityScale: 2
@@ -7458,8 +7473,9 @@ MonoBehaviour:
   _wallsAttachGravityScale: 0
   _wallsDeattachGravityScale: 1
   _contactLayers:
-  - Default
-  - PlayerWeaponNonContact
+    serializedVersion: 2
+    m_Bits: 2049
+  _detectionDistance: 0.2
 --- !u!114 &1037271485840174156
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class Finish : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<PlayerControll>()) 
+        if (collision.GetComponent<PlayerJumpControll>()) 
         {
             _uiService.ShowScreen("Win");
         }

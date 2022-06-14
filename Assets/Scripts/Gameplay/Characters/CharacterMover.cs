@@ -14,15 +14,12 @@ public class CharacterMover : CharacterPhysics
 
     public void Move(Vector2 velocity) 
     {
-        velocity.y = 0f;
-        if (IsGrounded && !DetectWall(velocity.normalized))
+        velocity.y = _rb.velocity.y;
+        if (!IsGrounded && DetectWall(velocity.normalized))
         {
-            _rb.velocity = velocity;
+            velocity.x = 0f;
         }
-        else 
-        {
-            _rb.velocity = Vector2.zero;
-        }
+        _rb.velocity = velocity;
     }
 
     private bool DetectWall(Vector2 direction) 

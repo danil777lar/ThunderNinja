@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMoveController : MonoBehaviour
+public class EnemyMoveControll : MonoBehaviour
 {
     [Header("Patrol")]
     [SerializeField] private bool _usePatrol;

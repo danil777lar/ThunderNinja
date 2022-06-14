@@ -16,7 +16,7 @@ public class EnemyVision : MonoBehaviour
     private bool _playerInVision;
     private bool _disableUpdate;
     private Transform _aimTarget;
-    private PlayerControll _playerControll;
+    private PlayerJumpControll _playerControll;
     private BoxCollider2D _playerCollider;
 
     private Tween _shootTween;
@@ -25,7 +25,7 @@ public class EnemyVision : MonoBehaviour
     private void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        _playerControll = player.GetComponent<PlayerControll>();
+        _playerControll = player.GetComponent<PlayerJumpControll>();
         _playerCollider = player.GetComponent<BoxCollider2D>();
         _playerControll.Destroyed += () => _disableUpdate = true;
         _hitTrigger.Killed += () =>

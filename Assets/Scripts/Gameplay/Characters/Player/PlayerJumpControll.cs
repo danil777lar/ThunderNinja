@@ -7,7 +7,7 @@ using DG.Tweening;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CharacterPhysics))]
-public class PlayerControll : MonoBehaviour
+public class PlayerJumpControll : MonoBehaviour
 {
     [SerializeField] private float _force;
     [SerializeField] private float _loadTime;
@@ -25,6 +25,7 @@ public class PlayerControll : MonoBehaviour
 
     private float _loadTimePassed;
 
+    private Joystick _joystick;
     private Rigidbody2D _rigidbody;
     private CharacterPhysics _physics;
     private BoxCollider2D _collider;
@@ -43,11 +44,7 @@ public class PlayerControll : MonoBehaviour
         _collider = GetComponent<BoxCollider2D>();
         _physics = GetComponent<CharacterPhysics>();
 
-        Joystick.Initialized += LinkSlideArea;
-        if (Joystick.Default) 
-        {
-            LinkSlideArea();
-        }
+        StartCoroutine(LinkJoystickCoroutine());
     }
 
     private void Update()
@@ -57,24 +54,20 @@ public class PlayerControll : MonoBehaviour
 
     private void OnDestroy()
     {
-        Joystick.Default.PointerDown -= OnPointerDown;
-        Joystick.Default.PointerUp -= OnPointerUp;
+        if (_joystick)
+        {
+            _joystick.PointerDown -= OnPointerDown;
+            _joystick.PointerUp -= OnPointerUp;
+        }
         Destroyed?.Invoke();
     }
 
 
-    private void LinkSlideArea() 
-    {
-        Joystick.Initialized -= LinkSlideArea;
-        Joystick.Default.PointerDown += OnPointerDown;
-        Joystick.Default.PointerUp += OnPointerUp;
-    }
-
     private void TryComputeAim() 
     {
-        if (!Joystick.Default) return;
+        if (!_joystick) return;
 
-        if (Joystick.Default.Direction.magnitude < _minJoystickMagnitude)
+        if (_joystick.Direction.magnitude < _minJoystickMagnitude)
         {
             _loadTimePassed = 0f;
             Time.timeScale = 1f;
@@ -88,9 +81,9 @@ public class PlayerControll : MonoBehaviour
             Time.timeScale = 0.1f;
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
             _trajectory.maxLenght = _ammoDistance * Mathf.Min(_loadTimePassed / _loadTime, 1f);
-            _trajectory.ShowTrajectory(GetForce(Joystick.Default.Direction));
+            _trajectory.ShowTrajectory(GetForce(_joystick.Direction));
             ComputeAim = true;
-            AimDirection = GetForce(Joystick.Default.Direction);
+            AimDirection = GetForce(_joystick.Direction);
         }
     }
 
@@ -127,11 +120,11 @@ public class PlayerControll : MonoBehaviour
     private void OnPointerUp() 
     {
         _trajectory.HideTrajectory();
-        if (Joystick.Default.Direction.magnitude >= _minJoystickMagnitude && _loadTimePassed >= _loadTime)
+        if (_joystick.Direction.magnitude >= _minJoystickMagnitude && _loadTimePassed >= _loadTime)
         {
             _teleportAmmoInstance = Instantiate(_teleportAmmoPrefab, GameObject.FindGameObjectWithTag("Level").transform, true);
             _teleportAmmoInstance.transform.position = new Vector3(_ammoSpawn.position.x, _ammoSpawn.position.y, 0f);
-            _teleportAmmoInstance.Shoot(GetForce(Joystick.Default.Direction));
+            _teleportAmmoInstance.Shoot(GetForce(_joystick.Direction));
         }
     }
 
@@ -179,5 +172,15 @@ public class PlayerControll : MonoBehaviour
                 transform.position = position;
             }
         }
+    }
+
+
+    private IEnumerator LinkJoystickCoroutine()
+    {
+        yield return StartCoroutine(Joystick.WaitJoystickInit(Joystick.JoystickPlacement.Left));
+        _joystick = Joystick.GetJoystick(Joystick.JoystickPlacement.Left);
+
+        _joystick.PointerDown += OnPointerDown;
+        _joystick.PointerUp += OnPointerUp;
     }
 }

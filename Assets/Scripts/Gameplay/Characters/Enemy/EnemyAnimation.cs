@@ -13,13 +13,13 @@ public class EnemyAnimation : MonoBehaviour
     [SerializeField] private float _walkAnimSpeedScale;
 
     private NamedAnimancerComponent _animancer;
-    private EnemyMoveController _moveController;
+    private EnemyMoveControll _moveController;
 
 
     private void Start()
     {
         _animancer = GetComponent<NamedAnimancerComponent>();
-        _moveController = GetComponentInParent<EnemyMoveController>();
+        _moveController = GetComponentInParent<EnemyMoveControll>();
     }
 
     private void Update()

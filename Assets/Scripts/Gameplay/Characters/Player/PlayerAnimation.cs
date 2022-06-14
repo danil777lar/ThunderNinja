@@ -8,14 +8,15 @@ public class PlayerAnimation : MonoBehaviour
 {
     [Header("Update Animations")]
     [SerializeField] private AnimationClip _idleAnim;
+    [SerializeField] private AnimationClip _walkAnim;
     [SerializeField] private AnimationClip _fallAnim;
     [SerializeField] private AnimationClip _flyAnim;
     [SerializeField] private AnimationClip _wallHangAnim;
     [SerializeField] private AnimationClip _ceilHangAnim;
     [Header("Event Animations")]
     [SerializeField] private AnimationClip _landAnim;
-    [SerializeField] private AnimationClip _rollAnim;
     [Space]
+    [SerializeField] private float _walkAnimSpeedScale;
     [SerializeField] private Transform _armRoot;
 
     private bool _updateAnim = true;
@@ -24,7 +25,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private NamedAnimancerComponent _animancer;
     private CharacterPhysics _physics;
-    private PlayerControll _controll;
+    private PlayerJumpControll _controll;
     private IEnumerator _updateAnimDelayCoroutine;
 
 
@@ -32,7 +33,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         _animancer = GetComponent<NamedAnimancerComponent>();
         _physics = GetComponentInParent<CharacterPhysics>();
-        _controll = GetComponentInParent<PlayerControll>();
+        _controll = GetComponentInParent<PlayerJumpControll>();
 
         _controll.PlayerTeleported += OnPlayerTeleported;
         _physics.GroundStateChanged += OnGroundStateChanged;
@@ -46,8 +47,8 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (_updateAnim)
         {
-            ComputeAnim(out AnimationClip anim, out float fade);
-            _animancer.Play(anim, fade);
+            ComputeAnim(out AnimationClip anim, out float fade, out float speed);
+            _animancer.Play(anim, fade).Speed = speed;
         }
 
         if (!_controll.ComputeAim)
@@ -83,27 +84,26 @@ public class PlayerAnimation : MonoBehaviour
     private void OnAnimatorIK(int layerIndex)
     {
         _animancer.Animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, _ikWeight);
-        //_animancer.Animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, _ikWeight);
         _animancer.Animator.SetIKPosition(AvatarIKGoal.LeftHand, _ikPosition);
     }
 
 
-    private void ComputeAnim(out AnimationClip anim, out float fade)
+    private void ComputeAnim(out AnimationClip anim, out float fade, out float speed)
     {
         anim = null;
         fade = 0.2f;
+        speed = 1f;
 
         if (_physics.IsGrounded)
         {
-            if (Mathf.Abs(_physics.Velocity.x) > 1f)
-                anim = _rollAnim;
-            else 
+            if (Mathf.Abs(_physics.Velocity.x) > 0f)
+            {
+                anim = _walkAnim;
+                speed = Mathf.Abs(_physics.Velocity.x) * _walkAnimSpeedScale;
+            }
+            else
                 anim = _idleAnim;
         }
-/*        else if (_physics.IsCeiled)
-        {
-            anim = _ceilHangAnim;
-        }*/
         else if (_physics.IsLeftWallSlide)
         {
             anim = _wallHangAnim;
@@ -166,7 +166,7 @@ public class PlayerAnimation : MonoBehaviour
 
         _physics.ForceUpdate();
         _animancer.Stop();
-        ComputeAnim(out AnimationClip anim, out float fade);
+        ComputeAnim(out AnimationClip anim, out float fade, out float speed);
         _animancer.Play(anim);
     }
 
