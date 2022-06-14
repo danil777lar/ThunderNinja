@@ -19,7 +19,7 @@ public class CharacterPhysics : MonoBehaviour
     [SerializeField] private float _wallsAttachGravityScale;
     [SerializeField] private float _wallsDeattachGravityScale;
     [Space]
-    [SerializeField] private string[] _contactLayers;
+    [SerializeField] private LayerMask _contactLayers;
 
     protected Rigidbody2D _rb;
     protected BoxCollider2D _collider; 
@@ -123,7 +123,7 @@ public class CharacterPhysics : MonoBehaviour
     private bool CastByDirection(Vector2 direction) 
     {
         ContactFilter2D filter = new ContactFilter2D();
-        filter.layerMask = LayerMask.GetMask(_contactLayers);
+        filter.layerMask = _contactLayers;
         filter.useLayerMask = true;
 
         RaycastHit2D[] hits = new RaycastHit2D[1]; 
@@ -136,7 +136,7 @@ public class CharacterPhysics : MonoBehaviour
         for (int i = 0; i < castCount; i++)
         {
             Vector3 origin = transform.position + (Vector3.up * Mathf.Lerp(0f + heightOffset, _collider.size.y - heightOffset, (float)i / (float)castCount));
-            RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, LayerMask.GetMask(_contactLayers));
+            RaycastHit2D hit = Physics2D.Raycast(origin, direction, distance, _contactLayers);
             if (hit && !hit.collider.OverlapPoint(origin))
             {
                 Debug.DrawLine(origin, hit.point, Color.green);

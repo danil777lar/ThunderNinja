@@ -11,8 +11,11 @@ public class EnemyMoveController : MonoBehaviour
     [SerializeField] private Transform _rightPatrolBound;
     [SerializeField] private Transform _leftPatrolBound;
 
+    private bool _delayed;
     private CharacterMover _mover;
     private Transform _targetPatrolBound;
+
+    public Vector2 MoveVelocity { get; private set; }
 
 
 
@@ -29,7 +32,8 @@ public class EnemyMoveController : MonoBehaviour
 
     private void TryComputePatrol() 
     {
-        if (!(_usePatrol && _rightPatrolBound && _leftPatrolBound))
+        MoveVelocity = Vector2.zero;
+        if (!_usePatrol || !_rightPatrolBound || !_leftPatrolBound || _delayed)
             return;
 
         if (!_targetPatrolBound) 
@@ -41,16 +45,32 @@ public class EnemyMoveController : MonoBehaviour
 
         if (Vector2.Distance(transform.position, _targetPatrolBound.position) >= 0.1f)
         {
-            _mover.Move((_targetPatrolBound.position - transform.position).normalized * _patrolSpeed);
+            MoveVelocity = (_targetPatrolBound.position - transform.position).normalized * _patrolSpeed;
+            _mover.Move(MoveVelocity);
         }
         else
         {
             _targetPatrolBound = (_targetPatrolBound == _rightPatrolBound ? _leftPatrolBound : _rightPatrolBound);
+            Delay();
         }
     }
 
     private void OnWallDetected(Vector2 direction) 
     {
         _targetPatrolBound = (_targetPatrolBound == _rightPatrolBound ? _leftPatrolBound : _rightPatrolBound);
+        Delay();
+    }
+
+    private void Delay() 
+    {
+        StopAllCoroutines();
+        StartCoroutine(DelayCoroutine());
+    }
+
+    private IEnumerator DelayCoroutine() 
+    {
+        _delayed = true;
+        yield return new WaitForSeconds(_patrolDelay);
+        _delayed = false;
     }
 }
