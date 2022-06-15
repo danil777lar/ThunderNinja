@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Larje.Core.Tools.Joystick;
 
 [RequireComponent(typeof(CharacterMover))]
 public class PlayerRunControll : MonoBehaviour

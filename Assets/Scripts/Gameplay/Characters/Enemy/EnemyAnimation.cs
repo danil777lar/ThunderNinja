@@ -20,6 +20,8 @@ public class EnemyAnimation : MonoBehaviour
     {
         _animancer = GetComponent<NamedAnimancerComponent>();
         _moveController = GetComponentInParent<EnemyMoveControll>();
+
+        _animancer.Layers[0].ApplyAnimatorIK = true;
     }
 
     private void Update()

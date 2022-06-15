@@ -2835,7 +2835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ragdoll: {fileID: 146561024037875918}
-  _weapon: {fileID: 6808056414208746675}
+  gun: {fileID: 6808056414208746675}
   _hitParts: {fileID: 6480981873378267560, guid: 01eb5cf09fad86b48a06febf7bacf125, type: 3}
   _bloodParts: {fileID: 1846507115879949583, guid: cf945581b6710d740a8a5a2d408750e9, type: 3}
 --- !u!61 &6551061452305785387
@@ -6028,7 +6028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730289ef4098c8041a2bddb50fd4948b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animancer: {fileID: 6808056414208746672}
+  _animator: {fileID: 6858805081491652794}
 --- !u!1 &6809371737665130480
 GameObject:
   m_ObjectHideFlags: 0
@@ -6446,7 +6446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _visionDistance: 1000
-  _weapon: {fileID: 6808056414208746675}
+  gun: {fileID: 6808056414208746675}
   _shootImage: {fileID: 675604072003420749}
   _hitTrigger: {fileID: 6664342328851807399}
 --- !u!1 &8151994225768791036

@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Larje.Core.Utils.WeaponControll;
+using Larje.Core.Tools.GunController;
 using DG.Tweening;
+using UnityEngine.Serialization;
 
 public class EnemyVision : MonoBehaviour
 {
     [SerializeField] private float _visionDistance = 1000f;
+    [FormerlySerializedAs("_weapon")]
     [Space]
-    [SerializeField] private WeaponController _weapon;
+    [SerializeField] private GunController gun;
     [SerializeField] private Image _shootImage;
     [SerializeField] private EnemyHitTrigger _hitTrigger;
 
@@ -52,13 +54,13 @@ public class EnemyVision : MonoBehaviour
         if (!EnemyVisionTarget.Default.CheckIsInVision(transform, _visionDistance, 45f))
         {
             _playerInVision = false;
-            _weapon.DisableWeapon();
+            gun.DisableWeapon();
 
             if (_aimTarget)
             {
                 Destroy(_aimTarget.gameObject);
                 _aimTarget = null;
-                _weapon.SetAimTarget(null);
+                gun.SetAimTarget(null);
             }
 
             _shootImage.fillAmount = 0f;
@@ -78,14 +80,14 @@ public class EnemyVision : MonoBehaviour
         if (EnemyVisionTarget.Default.CheckIsInVision(transform, _visionDistance, 45f))
         {
             _playerInVision = true;
-            _weapon.EnableWeapon();
+            gun.EnableWeapon();
 
             if (_aimTarget)
                 Destroy(_aimTarget.gameObject);
             _aimTarget = new GameObject("Aim Target").transform;
             _aimTarget.SetParent(GameObject.FindGameObjectWithTag("Level").transform);
             _aimTarget.position = _playerCollider.bounds.center;
-            _weapon.SetAimTarget(_aimTarget);
+            gun.SetAimTarget(_aimTarget);
 
             _shootImage.fillAmount = 0f;
             _shootTween?.Kill();
@@ -93,7 +95,7 @@ public class EnemyVision : MonoBehaviour
                 .OnComplete(() =>
                 {
                     _shootImage.fillAmount = 0f;
-                    _weapon.Shoot();
+                    gun.Shoot();
                 });
 
             return;

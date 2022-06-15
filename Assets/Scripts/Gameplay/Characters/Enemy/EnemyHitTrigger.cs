@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Larje.Core.Services;
-using Larje.Core.Utils.WeaponControll;
+using Larje.Core.Tools.GunController;
+using UnityEngine.Serialization;
 
 public class EnemyHitTrigger : MonoBehaviour
 {
     [SerializeField] private CharacterRagdoll _ragdoll;
-    [SerializeField] private WeaponController _weapon;
+    [FormerlySerializedAs("_weapon")] [SerializeField] private GunController gun;
     [SerializeField] private ParticleSystem _hitParts;
     [SerializeField] private ParticleSystem _bloodParts;
 
@@ -39,7 +40,7 @@ public class EnemyHitTrigger : MonoBehaviour
             bloodPartInstance.transform.forward = -(hitPartInstance.transform.position - selfCollider.bounds.center);
             bloodPartInstance.Play();
 
-            _weapon?.Drop();
+            gun?.Drop();
             _ragdoll.EnableRagdoll((transform.position - collision.transform.position).normalized * 5f);
 
             Killed?.Invoke();

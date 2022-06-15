@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Larje.Core.Tools.TrajectoryDrawer;
+using Larje.Core.Tools.Joystick;
 using DG.Tweening;
 
 [RequireComponent(typeof(Rigidbody2D))]
