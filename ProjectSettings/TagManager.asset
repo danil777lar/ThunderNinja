@@ -18,9 +18,9 @@ TagManager:
   - CharacterHitTrigger
   - PlayerRaycastTarget
   - PlayerWeaponNonContact
-  - 
-  - 
-  - 
+  - Mask
+  - BehindMask
+  - Black
   - 
   - 
   - 
