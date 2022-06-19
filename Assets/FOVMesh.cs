@@ -33,9 +33,9 @@ public class FOVMesh : MonoBehaviour
         int triangleIndex = 0;
         for (int i = 0; i <= _castCount; i++)
         {
-            float angle = 360f - (360f / (float) _castCount) * i;
+            float angle = (_angleRange / 2f) - (_angleRange / (float) _castCount) * i;
             Vector3 vertex;
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Utils.GetVectorFromAngle(angle), _maxDistance, _contactLayers);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Utils.GetVectorFromAngle(angle)), _maxDistance, _contactLayers);
             if (hit.collider == null)
             {
                 vertex = Utils.GetVectorFromAngle(angle) * _maxDistance;
